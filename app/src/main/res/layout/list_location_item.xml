@@ -5,9 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/location_picture"
+        android:layout_width="@dimen/picture_width"
+        android:layout_height="@dimen/picture_height"
+        android:layout_gravity="center"
+        android:contentDescription="@string/picture_description"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
     <TextView
         android:id="@+id/location_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textStyle="bold"
         tools:text="Opera House" />
 </LinearLayout>
