@@ -28,4 +28,13 @@
         <item name="android:verticalSpacing">@dimen/grid_view_spacing</item>
         <item name="android:drawSelectorOnTop">true</item>
     </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorDeepOrange500</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>

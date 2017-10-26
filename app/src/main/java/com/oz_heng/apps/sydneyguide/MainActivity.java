@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, ListFragment.OnListFragmentInteractionListener {
 
     static final int CATEGORY_PLACE_TO_VISIT = 0;
     static final int CATEGORY_PICNIC_SPOT = 1;
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity
 
     private void selectItem(int category) {
         // Update the main content by replacing the fragment.
-        LocationFragment fragment = LocationFragment.newInstance(category);
+        ListFragment fragment = ListFragment.newInstance(category);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
 
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity
 
     /**
      * Set the title on the action bar.
-     * @param title
+     * @param title title to be displayed on the action bar.
      */
     private void setTitle(String title) {
         ActionBar actionBar = getSupportActionBar();
@@ -134,6 +134,24 @@ public class MainActivity extends AppCompatActivity
     }
 
     /**
+     * Callback from {@link ListFragment} to this host Activity to select the location
+     * corresponding the the following parameters.
+     * @param category_nbr Number identifying the corresponding category.
+     * @param location_nbr Number identifying the selected location.
+     */
+    @Override
+    public void selectLocationFragment(int category_nbr, int location_nbr) {
+        // Update the main content by replacing the fragment.
+        LocationFragment fragment = LocationFragment.newInstance(category_nbr, location_nbr);
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
+
+        // Set the title with the location name.
+        Location location = listOfListsOfLocations.get(category_nbr).get(location_nbr);
+        setTitle(location.getName());
+    }
+
+    /*
      * Populate the location data.
      */
     private void populateLocationsData() {

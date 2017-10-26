@@ -7,6 +7,9 @@
     <string name="what">What?</string>
     <string name="exit">Exit</string>
 
+    <string name="OK">OK</string>
+    <string name="picture_description">Picture of the location</string>
+
     <string-array name="categories_array">
         <item>@string/places_to_visit</item>
         <item>@string/picnic_spots</item>
@@ -14,6 +17,7 @@
         <item>@string/what</item>
     </string-array>
 
+    <!-- Navigation Drawer-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -25,6 +29,8 @@
     <string name="nav_menu_what">@string/what</string>
     <string name="nav_menu_exit">@string/exit</string>
 
-    <string name="picture_description">Picture of the location</string>
+    <!-- Places to visit -->
+    <string name="circular_quay_description">Some of the best attractions in the world are in Circular Quay, on the waterfront of beautiful Sydney Harbour. With ferries, trains and buses arriving and departing the quay, it’s also a great place to get transport to other world-famous attractions near the city. Simply catch the 333 bus to Bondi Beach or the ferry to Manly Beach, or explore a range of other options at your leisure.\n\nBegin your discovery of the quay by strolling along the harbour foreshore to the Sydney Opera House and the Royal Botanic Garden. Along the way, you\'ll find some great spots for the perfect photograph of Sydney\'s favourite icons - the Sydney Harbour Bridge and the Sydney Opera House.\n\nAmong the many things to do, art lovers will be enthralled with a visit to the Museum of Contemporary Art Australia, on the western side of the quay, where you’ll find The Rocks. Explore the cobbled laneways and heritage buildings in the historic Rocks, considered the birthplace of modern Sydney. Cafes, bars and restaurants dot the eastern and western sides of Circular Quay, offering sublime harbour views with delicious food and drinks.</string>
+
 
 </resources>
