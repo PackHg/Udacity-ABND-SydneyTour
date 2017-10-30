@@ -1,6 +1,7 @@
 package com.oz_heng.apps.sydneyguide;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -16,7 +17,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, ListFragment.OnListFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        ListFragment.OnListFragmentInteractionListener,
+        LocationFragment.OnLocationFragmentInteractionListener {
 
     static final int CATEGORY_PLACE_TO_VISIT = 0;
     static final int CATEGORY_PICNIC_SPOT = 1;
@@ -24,13 +27,13 @@ public class MainActivity extends AppCompatActivity
     static final int CATEGOGY_WHAT = 3;
 
     static ArrayList<ArrayList<Location>> listOfListsOfLocations;
+    static String[] categoriesArray;
 
     int category = 0;
-    String[] categoriesArray;
 
     Toolbar toolbar;
-    DrawerLayout drawer;
     NavigationView navigationView;
+    DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +89,7 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem  item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -149,6 +152,14 @@ public class MainActivity extends AppCompatActivity
         // Set the title with the location name.
         Location location = listOfListsOfLocations.get(category_nbr).get(location_nbr);
         setTitle(location.getName());
+    }
+
+    /**
+     * Callback from {@link LocationFragment} to this host Activity
+     */
+    @Override
+    public void dismissLocationFragment(int category) {
+        selectItem(category);
     }
 
     /*

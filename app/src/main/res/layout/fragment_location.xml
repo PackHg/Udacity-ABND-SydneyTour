@@ -23,7 +23,7 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/button_ok"
+            android:id="@+id/location_button_ok"
             style="@style/ButtonStyle"
             android:layout_gravity="end"
             android:layout_margin="@dimen/activity_margin"

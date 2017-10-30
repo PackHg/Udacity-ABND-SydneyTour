@@ -4,6 +4,7 @@ package com.oz_heng.apps.sydneyguide;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,9 +23,10 @@ import static com.oz_heng.apps.sydneyguide.MainActivity.listOfListsOfLocations;
  * {@link ListFragment} class pertaining to a list of {@link Location}.
  */
 public class ListFragment extends Fragment {
+    private static final String LOG_TAG = ListFragment.class.getSimpleName();
+
     static final String ARG_CATEGORY = "category";
 
-    // TODO: Rename and change types of parameters
     private int category;
 
     private Unbinder unbinder;
@@ -62,6 +64,8 @@ public class ListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.v(LOG_TAG, "onCreateView()");
+
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         unbinder = ButterKnife.bind(this, view);
 
@@ -92,10 +96,14 @@ public class ListFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     interface OnListFragmentInteractionListener {
-        // TODO: Update argument type and name
         void selectLocationFragment(int category, int location);
     }
 
+    /**
+     * Checks if the hosting Activity implements {@link OnListFragmentInteractionListener} interface.
+     * If not, throws a {@link RuntimeException}.
+     * @param context The Activity context.
+     */
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
