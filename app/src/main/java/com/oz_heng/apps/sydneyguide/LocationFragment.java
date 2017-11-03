@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewStub;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -23,7 +22,6 @@ public class LocationFragment extends Fragment {
     private static final String ARG_CATEGORY = "category";
     private static final String ARG_LOCATION = "location";
 
-    // TODO: Rename and change types of parameters
     private int category;
     private int location;
 
@@ -36,14 +34,13 @@ public class LocationFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
+     * Factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param category Parameter 1.
-     * @param location Parameter 2.
+     * @param category Selected category.
+     * @param location Selected location.
      * @return A new instance of fragment LocationFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static LocationFragment newInstance(int category, int location) {
         LocationFragment fragment = new LocationFragment();
         Bundle args = new Bundle();
@@ -71,34 +68,34 @@ public class LocationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_location, container, false);
         unbinder = ButterKnife.bind(this, view);
 
-        // In the viewStub, inflate the layout corresponding location.
-        ViewStub viewStub = (ViewStub) view.findViewById(R.id.view_stub);
-        viewStub.setLayoutResource(R.layout.circular_quay);
-        viewStub.inflate();
+//        // In the viewStub, inflate the layout corresponding location.
+//        ViewStub viewStub = (ViewStub) view.findViewById(R.id.view_stub);
+//        viewStub.setLayoutResource(R.layout.circular_quay);
+//        viewStub.inflate();
+
+//        ImageView imageView = viewStub.findViewById(R.id.location_picture_large);
+//        imageView.setImageDrawable(R.drawable.);
 
         return view;
     }
 
     /**
-     * on click of the OK button go back to the corresponding {@link ListFragment}.
+     * on click of the OK button: go back to the corresponding {@link ListFragment}.
      */
     @OnClick(R.id.location_button_ok)
     void onClickOkButton() {
-        mListener.dismissLocationFragment(category);
+        mListener.backToListFragment(category);
     }
 
     /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
+     * This interface must be implemented by a hosting activity.
      */
     interface OnLocationFragmentInteractionListener {
-        void dismissLocationFragment(int category);
+        /**
+         * Go back the {@link ListFragment} with the selected category.
+         * @param category Selected category.
+         */
+        void backToListFragment(int category);
     }
 
     /**

@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity
 
     static ArrayList<ArrayList<Location>> listOfListsOfLocations;
     static String[] categoriesArray;
-
     int category = 0;
 
     Toolbar toolbar;
@@ -45,6 +44,7 @@ public class MainActivity extends AppCompatActivity
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         categoriesArray = getResources().getStringArray(R.array.categories_array);
 
+        // Setup the navigation drawer.
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -67,19 +67,14 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -114,20 +109,25 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Launches the {@link ListFragment} with the selected categoty, updates the navigation's
+     * selected item and the action bar title.
+     * @param category Selected category.
+     */
     private void selectItem(int category) {
         // Update the main content by replacing the fragment.
         ListFragment fragment = ListFragment.newInstance(category);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
 
-        // Update selected item and title.
+        // Update navigation's selected item and action bar title.
         navigationView.getMenu().getItem(category).setChecked(true);
         setTitle(categoriesArray[category]);
     }
 
     /**
      * Set the title on the action bar.
-     * @param title title to be displayed on the action bar.
+     * @param title To be displayed on the action bar.
      */
     private void setTitle(String title) {
         ActionBar actionBar = getSupportActionBar();
@@ -155,20 +155,22 @@ public class MainActivity extends AppCompatActivity
     }
 
     /**
-     * Callback from {@link LocationFragment} to this host Activity
+     * Callback from {@link LocationFragment} to this host Activity, after the user clicks
+     * on the "OK" button: go back to the {@link ListFragment} with the selected category.
+     * @param category Selected category.
      */
     @Override
-    public void dismissLocationFragment(int category) {
+    public void backToListFragment(int category) {
         selectItem(category);
     }
 
     /*
-     * Populate the location data.
+     * Populate the locations data.
      */
     private void populateLocationsData() {
         ArrayList<Location> listOfPlacesToVisit = new ArrayList<>(
                 Arrays.asList(
-                        new Location("Visit 01"),
+                        new Location(getString(R.string.circular_quay)),
                         new Location("Visit 02"),
                         new Location("Visit 02"),
                         new Location("Visit 03"),

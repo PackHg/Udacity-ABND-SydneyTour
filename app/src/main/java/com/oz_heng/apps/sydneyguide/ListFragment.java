@@ -38,13 +38,12 @@ public class ListFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
+     * Factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param category Parameter 1.
-     * @return A new instance of fragment ListFragment.
+     * @param category Selected category.
+     * @return A new instance of ListFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static ListFragment newInstance(int category) {
         ListFragment fragment = new ListFragment();
         Bundle args = new Bundle();
@@ -75,6 +74,7 @@ public class ListFragment extends Fragment {
         LocationAdapter locationAdapter = new LocationAdapter(getContext(), locations);
         gridView.setAdapter(locationAdapter);
 
+        // Setup an OnItemClickListener on the GridView.
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -86,16 +86,14 @@ public class ListFragment extends Fragment {
     }
 
     /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
+     * This interface must be implemented by a hosting activity.
      */
     interface OnListFragmentInteractionListener {
+        /**
+         * To launch the {@link LocationFragment} with the selected category and location.
+         * @param category Selected category.
+         * @param location Selected location.
+         */
         void selectLocationFragment(int category, int location);
     }
 

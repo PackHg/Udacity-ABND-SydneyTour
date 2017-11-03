@@ -48,7 +48,7 @@ class LocationAdapter extends ArrayAdapter<Location> {
     }
 
     static class ViewHolder{
-        @BindView(R.id.location_name) TextView name;
+        @BindView(R.id.name) TextView name;
 
         ViewHolder(View view) {
             ButterKnife.bind(this, view);
