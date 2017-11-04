@@ -1,16 +1,23 @@
 package com.oz_heng.apps.sydneyguide;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
+
+import static com.oz_heng.apps.sydneyguide.MainActivity.listOfListsOfLocations;
 
 /**
  *
@@ -19,15 +26,20 @@ import butterknife.Unbinder;
 public class LocationFragment extends Fragment {
     private static final String LOG_TAG = LocationFragment.class.getSimpleName();
 
-    private static final String ARG_CATEGORY = "category";
-    private static final String ARG_LOCATION = "location";
+    private static final String ARG_CATEGORY_NUMBER = "category_number";
+    private static final String ARG_LOCATION_NUMBER = "location_number";
 
-    private int category;
-    private int location;
+    private int categoryNumber;
+    private int locationNumber;
+    private Location location;
 
     private OnLocationFragmentInteractionListener mListener;
 
     private Unbinder unbinder;
+    @BindView(R.id.location_picture) ImageView locationPicture;
+    @BindView(R.id.location_description) TextView locationDescription;
+    @BindView(R.id.location_map) TextView locationMap;
+    @BindView(R.id.location_web_adr) TextView locationWebAddress;
 
     public LocationFragment() {
         // Required empty public constructor
@@ -37,15 +49,15 @@ public class LocationFragment extends Fragment {
      * Factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param category Selected category.
+     * @param category Selected categoryNumber.
      * @param location Selected location.
      * @return A new instance of fragment LocationFragment.
      */
     public static LocationFragment newInstance(int category, int location) {
         LocationFragment fragment = new LocationFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_CATEGORY, category);
-        args.putInt(ARG_LOCATION, location);
+        args.putInt(ARG_CATEGORY_NUMBER, category);
+        args.putInt(ARG_LOCATION_NUMBER, location);
         fragment.setArguments(args);
         return fragment;
     }
@@ -54,8 +66,8 @@ public class LocationFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            category = getArguments().getInt(ARG_CATEGORY);
-            location = getArguments().getInt(ARG_LOCATION);
+            categoryNumber = getArguments().getInt(ARG_CATEGORY_NUMBER);
+            locationNumber = getArguments().getInt(ARG_LOCATION_NUMBER);
         }
     }
 
@@ -68,23 +80,28 @@ public class LocationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_location, container, false);
         unbinder = ButterKnife.bind(this, view);
 
-//        // In the viewStub, inflate the layout corresponding location.
-//        ViewStub viewStub = (ViewStub) view.findViewById(R.id.view_stub);
-//        viewStub.setLayoutResource(R.layout.circular_quay);
-//        viewStub.inflate();
-
-//        ImageView imageView = viewStub.findViewById(R.id.location_picture_large);
-//        imageView.setImageDrawable(R.drawable.);
+        // Display location data
+        location = listOfListsOfLocations.get(categoryNumber).
+                get(locationNumber);
+        locationPicture.setImageResource(location.getDrawableId());
+        locationDescription.setText(location.getDescription());
+        locationMap.setText(location.getAddress());
+        locationWebAddress.setText(location.getWebAddress());
 
         return view;
     }
 
+    @OnClick(R.id.location_map)
+    void openMaps() {
+        openWebPage(location.getMapUrl());
+    }
+
     /**
-     * on click of the OK button: go back to the corresponding {@link ListFragment}.
+     * On click of the OK button: go back to the corresponding {@link ListFragment}.
      */
     @OnClick(R.id.location_button_ok)
     void onClickOkButton() {
-        mListener.backToListFragment(category);
+        mListener.backToListFragment(categoryNumber);
     }
 
     /**
@@ -92,10 +109,10 @@ public class LocationFragment extends Fragment {
      */
     interface OnLocationFragmentInteractionListener {
         /**
-         * Go back the {@link ListFragment} with the selected category.
-         * @param category Selected category.
+         * Go back the {@link ListFragment} with the selected categoryNumber.
+         * @param categoryNumber Selected category number.
          */
-        void backToListFragment(int category);
+        void backToListFragment(int categoryNumber);
     }
 
     /**
@@ -124,5 +141,18 @@ public class LocationFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
+    }
+
+    /**
+     * Open a Web browser at the url address.
+     *
+     * @param url a {@link String}
+     */
+    private void openWebPage(String url) {
+        Uri webPage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webPage);
+        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }

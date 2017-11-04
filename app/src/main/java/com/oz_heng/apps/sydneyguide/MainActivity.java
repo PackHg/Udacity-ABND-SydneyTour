@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity
 
     static ArrayList<ArrayList<Location>> listOfListsOfLocations;
     static String[] categoriesArray;
-    int category = 0;
+    int categoryNumber = 0;
 
     Toolbar toolbar;
     NavigationView navigationView;
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         populateLocationsData();
 
-        selectItem(category);
+        selectItem(categoryNumber);
     }
 
     @Override
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Launches the {@link ListFragment} with the selected categoty, updates the navigation's
      * selected item and the action bar title.
-     * @param category Selected category.
+     * @param category Selected categoryNumber.
      */
     private void selectItem(int category) {
         // Update the main content by replacing the fragment.
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Callback from {@link ListFragment} to this host Activity to select the location
      * corresponding the the following parameters.
-     * @param category_nbr Number identifying the corresponding category.
+     * @param category_nbr Number identifying the corresponding categoryNumber.
      * @param location_nbr Number identifying the selected location.
      */
     @Override
@@ -156,12 +156,12 @@ public class MainActivity extends AppCompatActivity
 
     /**
      * Callback from {@link LocationFragment} to this host Activity, after the user clicks
-     * on the "OK" button: go back to the {@link ListFragment} with the selected category.
-     * @param category Selected category.
+     * on the "OK" button: go back to the {@link ListFragment} with the selected categoryNumber.
+     * @param categoryNumber Selected category number.
      */
     @Override
-    public void backToListFragment(int category) {
-        selectItem(category);
+    public void backToListFragment(int categoryNumber) {
+        selectItem(categoryNumber);
     }
 
     /*
@@ -170,67 +170,19 @@ public class MainActivity extends AppCompatActivity
     private void populateLocationsData() {
         ArrayList<Location> listOfPlacesToVisit = new ArrayList<>(
                 Arrays.asList(
-                        new Location(getString(R.string.circular_quay)),
-                        new Location("Visit 02"),
-                        new Location("Visit 02"),
-                        new Location("Visit 03"),
-                        new Location("Visit 04"),
-                        new Location("Visit 05"),
-                        new Location("Visit 06"),
-                        new Location("Visit 07"),
-                        new Location("Visit 08"),
-                        new Location("Visit 09"),
-                        new Location("Visit 10"),
-                        new Location("Visit 11"),
-                        new Location("Visit 12"),
-                        new Location("Visit 13"),
-                        new Location("Visit 14")
+                        new Location(getString(R.string.c00_circular_quay),
+                                R.drawable.c00_circular_quay,
+                                getString(R.string.c00_circular_quay_description),
+                                getString(R.string.c00_circular_quay_address),
+                                getString(R.string.c00_circular_quay_map_url),
+                                getString(R.string.c00_circular_quay_web_adr))
                 ));
 
-        ArrayList<Location> listOfPicnicSpots = new ArrayList<>(
-                Arrays.asList(
-                        new Location("Picnic 01"),
-                        new Location("Picnic 02"),
-                        new Location("Picnic 02"),
-                        new Location("Picnic 03"),
-                        new Location("Picnic 04"),
-                        new Location("Picnic 05"),
-                        new Location("Picnic 06"),
-                        new Location("Picnic 07"),
-                        new Location("Picnic 08"),
-                        new Location("Picnic 09"),
-                        new Location("Picnic 10")
-                ));
+        ArrayList<Location> listOfPicnicSpots = new ArrayList<>();
 
-        ArrayList<Location> listOfRestaurants = new ArrayList<>(
-                Arrays.asList(
-                        new Location("Restaurant 01"),
-                        new Location("Restaurant 02"),
-                        new Location("Restaurant 02"),
-                        new Location("Restaurant 03"),
-                        new Location("Restaurant 04"),
-                        new Location("Restaurant 05"),
-                        new Location("Restaurant 06"),
-                        new Location("Restaurant 07"),
-                        new Location("Restaurant 08"),
-                        new Location("Restaurant 09"),
-                        new Location("Restaurant 10")
-                ));
+        ArrayList<Location> listOfRestaurants = new ArrayList<>();
 
-        ArrayList<Location> listOfWhats = new ArrayList<>(
-                Arrays.asList(
-                        new Location("What 01"),
-                        new Location("What 02"),
-                        new Location("What 02"),
-                        new Location("What 03"),
-                        new Location("What 04"),
-                        new Location("What 05"),
-                        new Location("What 06"),
-                        new Location("What 07"),
-                        new Location("What 08"),
-                        new Location("What 09"),
-                        new Location("What 10")
-                ));
+        ArrayList<Location> listOfWhats = new ArrayList<>();
 
         listOfListsOfLocations = new ArrayList<>(Arrays.asList(listOfPlacesToVisit,
                 listOfPicnicSpots, listOfRestaurants, listOfWhats));

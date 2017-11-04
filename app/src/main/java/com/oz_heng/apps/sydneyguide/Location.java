@@ -1,38 +1,76 @@
 package com.oz_heng.apps.sydneyguide;
 
-import android.graphics.drawable.Drawable;
-
 /**
  * Class pertaining to a location.
  */
 public class Location {
     private String name;
-    private Drawable drawable;
+    private int drawableId;
     private String description;
+    private String address;
+    private String mapUrl;
+    private String webAddress;
+
 
     Location(String name) {
         this.name = name;
     }
 
-    Location(String name, Drawable drawable) {
+    Location(String name, int id, String description, String address, String mapUrl, String webAddress) {
         this.name = name;
-        this.drawable = drawable;
+        this.drawableId = id;
+        this.description = description;
+        this.address = address;
+        this.mapUrl = mapUrl;
+        this.webAddress = webAddress;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public Drawable getDrawable() {
-        return drawable;
+    int getDrawableId() {
+        return drawableId;
     }
 
-    public void setDrawable(Drawable drawable) {
-        this.drawable = drawable;
+    void setDrawableId(int drawableId) {
+        this.drawableId = drawableId;
+    }
+
+    String getDescription() {
+        return description;
+    }
+
+    void setDescription(String description) {
+        this.description = description;
+    }
+
+    String getAddress() {
+        return address;
+    }
+
+    void setAddress(String address) {
+        this.address = address;
+    }
+
+    String getMapUrl() {
+        return mapUrl;
+    }
+
+    void setMapUrl(String mapUrl) {
+        this.mapUrl = mapUrl;
+    }
+
+    String getWebAddress() {
+        return webAddress;
+    }
+
+    void setWebAddress(String webAddress) {
+        this.webAddress = webAddress;
     }
 
 }

@@ -25,9 +25,9 @@ import static com.oz_heng.apps.sydneyguide.MainActivity.listOfListsOfLocations;
 public class ListFragment extends Fragment {
     private static final String LOG_TAG = ListFragment.class.getSimpleName();
 
-    static final String ARG_CATEGORY = "category";
+    static final String ARG_CATEGORY_NUMBER = "category_number";
 
-    private int category;
+    private int categoryNumber;
 
     private Unbinder unbinder;
 
@@ -41,13 +41,13 @@ public class ListFragment extends Fragment {
      * Factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param category Selected category.
+     * @param category Selected categoryNumber.
      * @return A new instance of ListFragment.
      */
     public static ListFragment newInstance(int category) {
         ListFragment fragment = new ListFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_CATEGORY, category);
+        args.putInt(ARG_CATEGORY_NUMBER, category);
         fragment.setArguments(args);
         return fragment;
     }
@@ -56,7 +56,7 @@ public class ListFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            category = getArguments().getInt(ARG_CATEGORY);
+            categoryNumber = getArguments().getInt(ARG_CATEGORY_NUMBER);
         }
     }
 
@@ -70,7 +70,7 @@ public class ListFragment extends Fragment {
 
         // Setup a LocationAdapter for the GridView.
         GridView gridView = view.findViewById(R.id.grid_view);
-        ArrayList<Location> locations = listOfListsOfLocations.get(category);
+        ArrayList<Location> locations = listOfListsOfLocations.get(categoryNumber);
         LocationAdapter locationAdapter = new LocationAdapter(getContext(), locations);
         gridView.setAdapter(locationAdapter);
 
@@ -78,7 +78,7 @@ public class ListFragment extends Fragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                mListener.selectLocationFragment(category, i);
+                mListener.selectLocationFragment(categoryNumber, i);
             }
         });
 
@@ -90,8 +90,8 @@ public class ListFragment extends Fragment {
      */
     interface OnListFragmentInteractionListener {
         /**
-         * To launch the {@link LocationFragment} with the selected category and location.
-         * @param category Selected category.
+         * To launch the {@link LocationFragment} with the selected categoryNumber and location.
+         * @param category Selected categoryNumber.
          * @param location Selected location.
          */
         void selectLocationFragment(int category, int location);

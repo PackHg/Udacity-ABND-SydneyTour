@@ -22,13 +22,13 @@
             android:layout_height="250dp"
             android:contentDescription="@string/picture_description"
             android:scaleType="centerCrop"
-            android:src="@drawable/c00_circular_quay" />
+            tools:src="@drawable/c00_circular_quay" />
 
         <TextView
             android:id="@+id/location_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/circular_quay_description" />
+            tools:text="@string/c00_circular_quay_description" />
 
         <TextView
             android:id="@+id/location_map"
@@ -38,10 +38,10 @@
             android:drawableLeft="@drawable/ic_location_on"
             android:drawableStart="@drawable/ic_location_on"
             android:gravity="center_vertical"
-            android:text="@string/circular_quay_address" />
+            tools:text="@string/c00_circular_quay_address" />
 
         <TextView
-            android:id="@+id/location_web"
+            android:id="@+id/location_web_adr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_margin"
@@ -49,7 +49,7 @@
             android:drawableLeft="@drawable/ic_earth"
             android:drawableStart="@drawable/ic_earth"
             android:gravity="center_vertical"
-            android:text="@string/circular_quay_web" />
+            tools:text="@string/c00_circular_quay_web_adr" />
 
         <Button
             android:id="@+id/location_button_ok"
