@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.GridView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -69,13 +69,13 @@ public class ListFragment extends Fragment {
         unbinder = ButterKnife.bind(this, view);
 
         // Setup a LocationAdapter for the GridView.
-        GridView gridView = view.findViewById(R.id.grid_view);
+        ListView listView = view.findViewById(R.id.list_view);
         ArrayList<Location> locations = listOfListsOfLocations.get(categoryNumber);
         LocationAdapter locationAdapter = new LocationAdapter(getContext(), locations);
-        gridView.setAdapter(locationAdapter);
+        listView.setAdapter(locationAdapter);
 
         // Setup an OnItemClickListener on the GridView.
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 mListener.selectLocationFragment(categoryNumber, i);

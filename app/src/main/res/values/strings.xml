@@ -36,4 +36,10 @@
     <string name="c00_circular_quay_map_url">https://www.google.com.au/maps/place/Circular+Quay,+Sydney+NSW+2000/@-33.8617374,151.2021292,15z/data=!4m13!1m7!3m6!1s0x6b12ae69d26aafad:0x7f9b21ebd5b57ce0!2sCircular+Quay,+Sydney+NSW+2000!3b1!8m2!3d-33.861756!4d151.2108839!3m4!1s0x6b12ae69d26aafad:0x7f9b21ebd5b57ce0!8m2!3d-33.861756!4d151.2108839</string>
     <string name="c00_circular_quay_web_adr">en.wikipedia.org/wiki/Circular_Quay</string>
 
+    <string name="c00_darling_harbour">Darling Harbour</string>
+    <string name="c00_darling_harbour_description">Day or night, Darling Harbour in the heart of Sydney is captivating with great entertainment, amazing wildlife, waterfront dining, wine and cocktail bars, and late-night dancing. Enjoy encounters with penguins, sharks and koalas. Climb aboard tall ships and take the kids to a fabulous playground.</string>
+    <string name="c00_darling_harbour_address">Darling Harbour, Sydney NSW 2000</string>
+    <string name="c00_darling_harbour_map_url">https://www.google.com.au/maps/place/Darling+Harbour/@-33.8750938,151.1960613,16z/data=!4m12!1m6!3m5!1s0x6b12ae47076bdbb7:0x738f78eda4ded6f0!2sDarling+Harbour!8m2!3d-33.87488!4d151.2009!3m4!1s0x6b12ae47076bdbb7:0x738f78eda4ded6f0!8m2!3d-33.87488!4d151.2009</string>
+    <string name="c00_darling_harbour_web_adr">www.darlingharbour.com</string>
+
 </resources>

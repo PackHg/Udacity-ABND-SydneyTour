@@ -175,7 +175,13 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c00_circular_quay_description),
                                 getString(R.string.c00_circular_quay_address),
                                 getString(R.string.c00_circular_quay_map_url),
-                                getString(R.string.c00_circular_quay_web_adr))
+                                getString(R.string.c00_circular_quay_web_adr)),
+                        new Location(getString(R.string.c00_darling_harbour),
+                                R.drawable.c00_darling_harbour,
+                                getString(R.string.c00_darling_harbour_description),
+                                getString(R.string.c00_darling_harbour_address),
+                                getString(R.string.c00_darling_harbour_map_url),
+                                getString(R.string.c00_darling_harbour_web_adr))
                 ));
 
         ArrayList<Location> listOfPicnicSpots = new ArrayList<>();

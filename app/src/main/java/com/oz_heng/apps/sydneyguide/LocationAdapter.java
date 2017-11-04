@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -16,8 +17,8 @@ import butterknife.ButterKnife;
 
 
 /**
- * Created by Pack Heng on 21/10/17
- * pack@oz-heng.com
+ * {@link LocationAdapter} is an {@link ArrayAdapter} that can provide the layout for each
+ * list item based on a data source, which is an {@link ArrayList<Location>}.
  */
 class LocationAdapter extends ArrayAdapter<Location> {
 
@@ -42,6 +43,7 @@ class LocationAdapter extends ArrayAdapter<Location> {
         Location location = getItem(position);
         if (location != null) {
             holder.name.setText(location.getName());
+            holder.image.setImageResource(location.getDrawableId());
         }
 
         return view;
@@ -49,6 +51,7 @@ class LocationAdapter extends ArrayAdapter<Location> {
 
     static class ViewHolder{
         @BindView(R.id.name) TextView name;
+        @BindView(R.id.picture) ImageView image;
 
         ViewHolder(View view) {
             ButterKnife.bind(this, view);

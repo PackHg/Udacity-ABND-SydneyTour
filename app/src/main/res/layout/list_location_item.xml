@@ -7,20 +7,23 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="@dimen/picture_width"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/picture_height"
         android:layout_gravity="center"
         android:contentDescription="@string/picture_description"
         android:scaleType="centerCrop"
-        android:src="@drawable/c00_circular_quay" />
+        tools:src="@drawable/c00_circular_quay" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginBottom="@dimen/activity_margin"
         android:ellipsize="end"
+        android:gravity="start"
         android:maxLines="2"
+        android:textAppearance="?android:textAppearanceMedium"
         android:textStyle="bold"
-        tools:text="Opera House" />
+        tools:text="@string/c00_circular_quay" />
+
 </LinearLayout>

@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -15,19 +16,6 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="GridViewStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">@dimen/activity_margin</item>
-        <item name="android:columnWidth">@dimen/grid_view_column_width</item>
-        <item name="android:gravity">center</item>
-        <item name="android:horizontalSpacing">@dimen/grid_view_spacing</item>
-        <item name="android:numColumns">auto_fit</item>
-        <item name="android:stretchMode">columnWidth</item>
-        <item name="android:verticalSpacing">@dimen/grid_view_spacing</item>
-        <item name="android:drawSelectorOnTop">true</item>
-    </style>
 
     <style name="ButtonStyle">
         <item name="android:layout_width">80dp</item>
