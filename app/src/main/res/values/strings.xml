@@ -42,4 +42,9 @@
     <string name="c00_darling_harbour_map_url">https://www.google.com.au/maps/place/Darling+Harbour/@-33.8750938,151.1960613,16z/data=!4m12!1m6!3m5!1s0x6b12ae47076bdbb7:0x738f78eda4ded6f0!2sDarling+Harbour!8m2!3d-33.87488!4d151.2009!3m4!1s0x6b12ae47076bdbb7:0x738f78eda4ded6f0!8m2!3d-33.87488!4d151.2009</string>
     <string name="c00_darling_harbour_web_adr">www.darlingharbour.com</string>
 
+    <string name="c00_bondi_beach">Bondi Beach</string>
+    <string name="c00_bondi_beach_description">With white sands, curling waves and sandstone cliffs, Bondi Beach is Australia’s most famous beach and a world icon. The jewel of Sydney’s laid-back beach lifestyle, Bondi has something for everyone, from swimming, surfing and sunbathing to a spectacular coastal walk and delicious places to eat.\n\nOnly 30 minutes by public transport from Town Hall in the city centre, Bondi is home to one of the oldest surf lifesaving clubs in the world and one of Australia’s oldest swimming clubs, iconic Bondi Icebergs at the southern end of the beach. You can swim laps with the Icebergs in the Bondi Baths.</string>
+    <string name="c00_bondi_beach_address">Bondi Beach, Sydney NSW 2026</string>
+    <string name="c00_bondi_beach_map_url">https://www.google.com.au/maps/place/Bondi+Beach+NSW+2026/@-33.893144,151.273114,15z/data=!4m13!1m7!3m6!1s0x6b12ad9c447281c7:0x20c31809c62de978!2sBondi+Beach+NSW+2026!3b1!8m2!3d-33.8914755!4d151.2766845!3m4!1s0x6b12ad9c447281c7:0x20c31809c62de978!8m2!3d-33.8914755!4d151.2766845</string>
+    <string name="c00_bondi_beach_web_adr">en.wikipedia.org/wiki/Bondi_Beach</string>
 </resources>

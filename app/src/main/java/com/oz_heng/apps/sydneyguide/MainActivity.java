@@ -181,8 +181,14 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c00_darling_harbour_description),
                                 getString(R.string.c00_darling_harbour_address),
                                 getString(R.string.c00_darling_harbour_map_url),
-                                getString(R.string.c00_darling_harbour_web_adr))
-                ));
+                                getString(R.string.c00_darling_harbour_web_adr)),
+                        new Location(getString(R.string.c00_bondi_beach),
+                                R.drawable.c00_bondi_beach,
+                                getString(R.string.c00_bondi_beach_description),
+                                getString(R.string.c00_bondi_beach_address),
+                                getString(R.string.c00_bondi_beach_map_url),
+                                getString(R.string.c00_bondi_beach_web_adr))
+                        ));
 
         ArrayList<Location> listOfPicnicSpots = new ArrayList<>();
 
