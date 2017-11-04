@@ -53,4 +53,40 @@
     <string name="c00_taronga_zoo_address">Bradleys Head Rd, Mosman NSW 2088</string>
     <string name="c00_taronga_zoo_map_url">https://www.google.com.au/maps/place/Taronga+Zoo/@-33.8430217,151.239719,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ac245aaaaaab:0xaeb9849c7a29e226!8m2!3d-33.8430217!4d151.241913</string>
     <string name="c00_taronga_zoo_web_adr">taronga.org.au</string>
+
+    <string name="c00_the_rocks">The Rocks</string>
+    <string name="c00_the_rocks_description">As the strip of land where European settlers chose to step ashore in 1788, The Rocks is the birthplace of modern Sydney. It has elvolved from a British colony of convicts to a thriving 21st century entertainment precinct.\n\nAmble along on cobbled laneways, enjoy a cool drink in Australia’s oldest pubs, and marvel at iconic attractions – the Sydney Opera House and the Sydney Harbour Bridge. For breathtaking views of beautiful Sydney Harbour, ascend the bridge with BridgeClimb Sydney or go to the Pylon Lookout.\n\nA great way to see The Rocks is on foot. There are markets, museums, galleries and delicious food and wine experiences.</string>
+    <string name="c00_the_rocks_address">The Rocks NSW 2000</string>
+    <string name="c00_the_rocks_map_url">https://www.google.com.au/maps/place/The+Rocks+NSW+2000/@-33.8587568,151.2058193,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae42b65d8fb3:0x5017d681632cd60!8m2!3d-33.85985!4d151.20901</string>
+    <string name="c00_the_rocks_web_adr">en.wikipedia.org/wiki/The_Rocks,_Sydney</string>
+
+    <string name="c00_chinatown">Chinatown</string>
+    <string name="c00_chinatown_description">With all the colour and excitement of an Asian marketplace, Chinatown and Haymarket offer an enticing mix of restaurants, noodle bars, food halls, and shops and markets full of bargains. Enjoy world-class shows too at the historic Capitol Theatre, a beautiful venue on Campbell Street.\n\nThe food experiences are amazing. From Chinese and Cantonese to Malaysian, Thai and Vietnamese, the dumpling houses, neon-lit nooks and food courts of Chinatown and Haymarket are irresistible. You’ll find a delicious range of restaurants, from yum cha palaces to hole-in-the-wall eateries.</string>
+    <string name="c00_chinatown_address">Chinatown, Haymarket NSW 2000</string>
+    <string name="c00_chinatown_map_url">https://www.google.com.au/maps/place/Chinatown/@-33.8792953,151.2035759,19z/data=!4m5!3m4!1s0x6b12ae249c20d251:0x6d49e024c3093a2f!8m2!3d-33.8790999!4d151.2045271</string>
+    <string name="c00_chinatown_web_adr">sydney-chinatown.info</string>
+
+    <string name="c00_manly">Manly</string>
+    <string name="c00_manly_description">Manly’s harmonious balance of carefree beach life and urban sophistication makes it one of Sydney’s most popular playgrounds. Whether you are looking to surf, swim, shop or wine and dine, you’ll be able to thoroughly immerse yourself in Manly. For spectacular views, take a ferry from Circular Quay across majestic Sydney Harbour to Manly Wharf.\n\nSituated between a tranquil inner-harbour beach on one side and a popular surf beach on the other, Manly combines a laid-back beachside attitude with sophisticated dining and shopping.\n\nManly’s long ocean-side stretch of sand, running all the way from Queenscliff Beach to North Steyne Beach and Manly Beach, has long held a strong attraction for walkers, bathers and surfers alike.</string>
+    <string name="c00_manly_address">Manly, NSW 2095</string>
+    <string name="c00_manly_map_url">https://www.google.com.au/maps/place/Manly+Beach/@-33.7964782,151.2845927,16z/data=!4m13!1m7!3m6!1s0x6b12ab09219bcc2b:0xa97f26bebad87850!2sManly+Beach!3b1!8m2!3d-33.7931501!4d151.2876488!3m4!1s0x6b12ab03f1142643:0x8a4d90a174387a16!8m2!3d-33.7931503!4d151.2876485</string>
+    <string name="c00_manly_web_adr">www.manlyaustralia.com.au</string>
+
+    <string name="c00_watsons_bay">Watsons Bay</string>
+    <string name="c00_watsons_bay_description">Enjoy stunning views of Sydney Harbour and fresh seafood in Watsons Bay, home to the celebrated seafood restaurant Doyles on the Beach. You can relax with a family picnic in a pretty harbourside park and take a dip at beautiful harbourside beaches. Walk to South Head for whale watching.\n\nWith lovely beaches, marvellous views and delicious seafood, Watsons Bay on the South Head peninsula in Sydney’s east is a delightful day trip. Australia’s oldest fishing village is home to waterfront restaurants, great walking trails, and a harbourside park perfect for family picnics.</string>
+    <string name="c00_watsons_bay_address">Watsons Bay NSW 2030</string>
+    <string name="c00_watsons_bay_map_url">https://www.google.com.au/maps/place/Watsons+Bay+NSW+2030/@-33.8401202,151.2642798,14z/data=!3m1!4b1!4m5!3m4!1s0x6b12ac899335bc45:0x5017d681632cee0!8m2!3d-33.8398183!4d151.2816573</string>
+    <string name="c00_watsons_bay_web_adr">en.wikipedia.org/wiki/Watsons_Bay,_New_South_Wales</string>
+
+    <string name="c00_paddington">Paddington</string>
+    <string name="c00_paddington_description">Visit the famous Paddington Markets, browse stylish boutiques on Oxford and William streets, and enjoy beautifully restored heritage pubs in Paddington, an elegant inner Sydney neighbourhood with rows of pretty Victorian terrace houses. There are cutting-edge galleries and cabaret to enjoy, too.\n\nDiscover the delights of Paddington, from designer boutiques to the iconic Paddington Markets, wonderful galleries and beautifully restored heritage pubs. Sophisticated and creative, this inner Sydney neighbourhood is where style meets taste, with the enticing Intersection and a delicious range of restaurants and cafes.\n\nOxford Street is a great place to start. You’ll find stylish boutiques, great pubs, delightful cafes, and the Chauvel Cinema’s old world charm in heritage-listed Paddington Town Hall, built in 1891. Across the road is the Magician’s Cabaret, where dinner is accompanied by dance, song and magic tricks.</string>
+    <string name="c00_paddington_address">395 Oxford St, Paddington NSW 2021</string>
+    <string name="c00_paddington_map_url">https://www.google.com.au/maps/place/Paddington+Markets/@-33.8869447,151.2275479,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae06ef3eca9b:0x77173e8ecd16c439!8m2!3d-33.8869492!4d151.2297366</string>
+    <string name="c00_paddington_web_adr">en.wikipedia.org/wiki/Paddington,_New_South_Wales</string>
+
+    <string name="c00_newton">Newton</string>
+    <string name="c00_newton_description">From hidden treasures to delicious surprises, Newtown is an enticing destination. Enjoy music and comedy at the Enmore Theatre, enjoy craft beer in microbrewery Young Henrys, browse designer and vintage boutiques, peruse book stores, and savour many flavours along tasty King Street.\n\nDiscover colourful and unconventional Newtown, a vibrant inner Sydney neighbourhood with a thriving music, theatre, design and restaurant scene. King Street is a delicious ‘eat street’ and cool shopping strip, with a marvellous range of designer boutiques, vintage stores and specialty shops.\n\nOnly 10 minutes from the city centre by train, Newtown borders the University of Sydney and is home to rows of restored 19th century terrace houses. Restaurants and cafes are dotted along King Street, Enmore Road, Australia Street and in neighbouring Erskineville, Enmore and Stanmore.</string>
+    <string name="c00_newton_address">Newtown NSW 2042</string>
+    <string name="c00_newton_map_url">https://www.google.com.au/maps/place/Newtown/@-33.8998891,151.1780182,17z/data=!4m13!1m7!3m6!1s0x6b12b0366307e97f:0x5017d681632c370!2sNewtown+NSW+2042!3b1!8m2!3d-33.897!4d151.1793!3m4!1s0x6b12b036b763e0f7:0x522aad92fdb7035c!8m2!3d-33.8978215!4d151.1788702</string>
+    <string name="c00_newton_web_adr">www.australia.com/en/places/sydney/locals-guide-to-newtown.html</string>
 </resources>
