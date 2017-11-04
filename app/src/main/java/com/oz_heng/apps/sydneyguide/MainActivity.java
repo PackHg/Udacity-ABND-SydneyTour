@@ -245,7 +245,13 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c01_wattamolla_description),
                                 getString(R.string.c01_wattamolla_address),
                                 getString(R.string.c01_wattamolla_map_url),
-                                getString(R.string.c01_wattamolla_web_adr))
+                                getString(R.string.c01_wattamolla_web_adr)),
+                        new Location(getString(R.string.c01_royal_botanic_garden),
+                                R.drawable.c01_royal_botanic_garden,
+                                getString(R.string.c01_royal_botanic_garden_description),
+                                getString(R.string.c01_royal_botanic_garden_address),
+                                getString(R.string.c01_royal_botanic_garden_map_url),
+                                getString(R.string.c01_royal_botanic_garden_web_adr))
 
                 ));
 
