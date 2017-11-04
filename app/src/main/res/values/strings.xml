@@ -47,4 +47,10 @@
     <string name="c00_bondi_beach_address">Bondi Beach, Sydney NSW 2026</string>
     <string name="c00_bondi_beach_map_url">https://www.google.com.au/maps/place/Bondi+Beach+NSW+2026/@-33.893144,151.273114,15z/data=!4m13!1m7!3m6!1s0x6b12ad9c447281c7:0x20c31809c62de978!2sBondi+Beach+NSW+2026!3b1!8m2!3d-33.8914755!4d151.2766845!3m4!1s0x6b12ad9c447281c7:0x20c31809c62de978!8m2!3d-33.8914755!4d151.2766845</string>
     <string name="c00_bondi_beach_web_adr">en.wikipedia.org/wiki/Bondi_Beach</string>
+
+    <string name="c00_taronga_zoo">Taronga Zoo</string>
+    <string name="c00_taronga_zoo_description">One of Sydney\'s most famous attractions, the award-winning Taronga Zoo is home to over 4,000 animals, including Australian native wildlife, as well as rare and endangered exotic animals. Overlooking the magnificent Sydney Harbour, Taronga Zoo is just 12 minutes from the city by ferry. Open 365 days a year, admission includes daily keeper talks and shows, and access to the Sky Safari, Sydney\'s only cable car.</string>
+    <string name="c00_taronga_zoo_address">Bradleys Head Rd, Mosman NSW 2088</string>
+    <string name="c00_taronga_zoo_map_url">https://www.google.com.au/maps/place/Taronga+Zoo/@-33.8430217,151.239719,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ac245aaaaaab:0xaeb9849c7a29e226!8m2!3d-33.8430217!4d151.241913</string>
+    <string name="c00_taronga_zoo_web_adr">taronga.org.au</string>
 </resources>
