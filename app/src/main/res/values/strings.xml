@@ -114,4 +114,16 @@
     <string name="c01_cockatoo_island_address">Cockatoo Island, NSW</string>
     <string name="c01_cockatoo_island_map_url">https://www.google.com.au/maps/place/Cockatoo+Island/@-33.8476006,151.1698545,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12afa4e11383d7:0xf017d68f9f0ab30!8m2!3d-33.8470558!4d151.1716362</string>
     <string name="c01_cockatoo_island_web_adr">www.cockatooisland.gov.au</string>
+
+    <string name="c01_bradleys_head">Bradleys Head</string>
+    <string name="c01_bradleys_head_description">The man-made amphitheatre at Bradleys Head is a very popular fishing and picnic spot in the Sydney Harbour National Park. It’s also a great lookout for panoramic views across the city skyline, the Opera House and the Harbour Bridge.\n\nThe huge mast at Bradleys Head was the foremast of HMAS Sydney, a light cruiser that was broken up on Cockatoo Island in 1929. Erected at Bradleys Head in 1934, it now serves as a monument for all Australian ships lost and all Australian sailors killed at war.\n\nIf you feel like hiking, the easy but picturesque walking trail from Bradleys Head to Chowder Bay is highly recommended!</string>
+    <string name="c01_bradleys_head_address">Bradleys Head, Mosman NSW 2088</string>
+    <string name="c01_bradleys_head_map_url">https://www.google.com.au/maps/place/Bradleys+Head/@-33.853016,151.2287973,14z/data=!3m1!4b1!4m5!3m4!1s0x6b12ac302dfc290f:0x6cb722953e0cc54!8m2!3d-33.8530534!4d151.2463069</string>
+    <string name="c01_bradleys_head_web_adr">en.wikipedia.org/wiki/Bradleys_Head</string>
+
+    <string name="c01_west_head_lookout">West Head Lookout</string>
+    <string name="c01_west_head_lookout_description">Known as one of the best lookouts in New South Wales, the West Head Lookout in Ku-ring-gai Chase National Park offers breathtaking views across Pittwater, Broken Bay, Barrenjoey Headland and the Central Coast.\n\nThe Resolute Picnic Area is located less than a kilometre away from the lookout and has parking available. From the picnic area you can choose to do some of the bushwalking trails that will take you to beautiful secluded beaches, such as Resolute Beach.</string>
+    <string name="c01_west_head_lookout_address">Ku-ring-gai Chase National Park, W Head Rd, Ku-Ring-Gai Chase NSW 2084</string>
+    <string name="c01_west_head_lookout_map_url">https://www.google.com.au/maps/place/West+Head+Lookout/@-33.5790471,151.2916463,14z/data=!4m5!3m4!1s0x6b0d4d5c61f2475b:0x139c486b16146a87!8m2!3d-33.5790516!4d151.3091558</string>
+    <string name="c01_west_head_lookout_web_adr">www.nationalparks.nsw.gov.au/things-to-do/lookouts/west-head-lookout</string>
 </resources>
