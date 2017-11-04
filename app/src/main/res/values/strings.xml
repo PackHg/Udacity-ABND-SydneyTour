@@ -108,4 +108,10 @@
     <string name="c01_royal_botanic_garden_address">Mrs Macquaries Rd, Sydney NSW 2000</string>
     <string name="c01_royal_botanic_garden_map_url">https://www.google.com.au/maps/place/Royal+Botanic+Gardens/@-33.8641814,151.2143768,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae6b60dda459:0xf017d68f9f1e7a0!8m2!3d-33.8641859!4d151.2165708</string>
     <string name="c01_royal_botanic_garden_web_adr">www.rbgsyd.nsw.gov.au</string>
+
+    <string name="c01_cockatoo_island">Cockatoo Island</string>
+    <string name="c01_cockatoo_island_description">Situated right in the middle of Sydney Harbour, Cockatoo Island is a historic UNESCO World-Heritage Listed island that you should visit at least once per year.\n\nWander around on the island and enjoy its well-preserved history. Cockatoo island is very popular with photographers so make sure you bring your camera to capture the beauty and rawness of this place. Book a luxury tent on the camping site if you’d like to stay overnight. Alternatively, you can also bring your own tent and camping gear and book a small space on the camping ground.</string>
+    <string name="c01_cockatoo_island_address">Cockatoo Island, NSW</string>
+    <string name="c01_cockatoo_island_map_url">https://www.google.com.au/maps/place/Cockatoo+Island/@-33.8476006,151.1698545,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12afa4e11383d7:0xf017d68f9f0ab30!8m2!3d-33.8470558!4d151.1716362</string>
+    <string name="c01_cockatoo_island_web_adr">www.cockatooisland.gov.au</string>
 </resources>

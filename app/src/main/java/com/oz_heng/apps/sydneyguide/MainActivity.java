@@ -251,7 +251,13 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c01_royal_botanic_garden_description),
                                 getString(R.string.c01_royal_botanic_garden_address),
                                 getString(R.string.c01_royal_botanic_garden_map_url),
-                                getString(R.string.c01_royal_botanic_garden_web_adr))
+                                getString(R.string.c01_royal_botanic_garden_web_adr)),
+                        new Location(getString(R.string.c01_cockatoo_island),
+                                R.drawable.c01_cockatoo_island,
+                                getString(R.string.c01_cockatoo_island_description),
+                                getString(R.string.c01_cockatoo_island_address),
+                                getString(R.string.c01_cockatoo_island_map_url),
+                                getString(R.string.c01_cockatoo_island_web_adr))
 
                 ));
 
