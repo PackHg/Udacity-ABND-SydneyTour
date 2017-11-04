@@ -97,5 +97,9 @@
     <string name="c01_bobbin_head_map_url">https://www.google.com.au/maps/place/Bobbin+Head+Picnic+Ground/@-33.6592946,151.1575591,17z/data=!3m1!4b1!4m5!3m4!1s0x6b0d576db3b8070b:0xdb4a146fbbf4485f!8m2!3d-33.6592946!4d151.1597531</string>
     <string name="c01_bobbin_head_web_adr">www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/bobbin-head</string>
 
-
+    <string name="c01_wattamolla">Wattamolla picnic area (Royal National Park)</string>
+    <string name="c01_wattamolla_description">Wattamolla Beach, and its lagoon, waterfall, picnic area and lookout, is a beautiful spot in the Royal National Park to spend a relaxing day out and about.\n\nLocated only 50 kilometres from the Sydney CBD, along the famous Royal Coastal Walk (aka the Coast Track), Wattamolla Beach is an oasis of natural beauty.</string>
+    <string name="c01_wattamolla_address">Royal National Park, Coast Track, Sutherland Shire NSW 2232</string>
+    <string name="c01_wattamolla_map_url">https://www.google.com.au/maps/place/Wattamolla+Beach/@-34.1385023,151.1147717,17z/data=!4m8!1m2!2m1!1sWattamolla+picnic+area!3m4!1s0x6b12c5bc545e201b:0x6494db2b07322f85!8m2!3d-34.1374189!4d151.1174691</string>
+    <string name="c01_wattamolla_web_adr">www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/wattamolla-picnic-area</string>
 </resources>
