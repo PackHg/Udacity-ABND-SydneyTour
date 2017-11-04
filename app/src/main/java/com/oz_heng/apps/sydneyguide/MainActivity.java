@@ -232,7 +232,15 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c00_newton_web_adr))
                 ));
 
-        ArrayList<Location> listOfPicnicSpots = new ArrayList<>();
+        ArrayList<Location> listOfPicnicSpots = new ArrayList<>(
+                Arrays.asList(
+                        new Location(getString(R.string.c01_bobbin_head),
+                                R.drawable.c01_bobbin_head,
+                                getString(R.string.c01_bobbin_head_description),
+                                getString(R.string.c01_bobbin_head_address),
+                                getString(R.string.c01_bobbin_head_map_url),
+                                getString(R.string.c01_bobbin_head_web_adr))
+        ));
 
         ArrayList<Location> listOfRestaurants = new ArrayList<>();
 

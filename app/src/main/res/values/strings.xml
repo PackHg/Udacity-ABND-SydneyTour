@@ -2,7 +2,7 @@
     <string name="app_name">Sydney Guide</string>
 
     <string name="places_to_visit">Places to Visit</string>
-    <string name="picnic_spots">Great Picnic Spots</string>
+    <string name="picnic_spots">Picnic Spots</string>
     <string name="restaurants">Restaurants</string>
     <string name="what">What?</string>
     <string name="exit">Exit</string>
@@ -89,4 +89,13 @@
     <string name="c00_newton_address">Newtown NSW 2042</string>
     <string name="c00_newton_map_url">https://www.google.com.au/maps/place/Newtown/@-33.8998891,151.1780182,17z/data=!4m13!1m7!3m6!1s0x6b12b0366307e97f:0x5017d681632c370!2sNewtown+NSW+2042!3b1!8m2!3d-33.897!4d151.1793!3m4!1s0x6b12b036b763e0f7:0x522aad92fdb7035c!8m2!3d-33.8978215!4d151.1788702</string>
     <string name="c00_newton_web_adr">www.australia.com/en/places/sydney/locals-guide-to-newtown.html</string>
+
+    <!-- Picnic spots -->
+    <string name="c01_bobbin_head">Bobbin Head</string>
+    <string name="c01_bobbin_head_description">Bobbin Head is a popular day-trip destination in the west of Ku-ring-gai Chase National Park. Surrounded by beautiful scenery, Bobbin Head offers excellent facilities such as picnic areas, playgrounds and gas barbecues.\n\nWith several exciting hiking trails in the area, Bobbin Head is also great for bushwalking.</string>
+    <string name="c01_bobbin_head_address">Bobbin Head Rd &amp; Ku-ring-gai Chase Road, Mount Colah NSW 2079</string>
+    <string name="c01_bobbin_head_map_url">https://www.google.com.au/maps/place/Bobbin+Head+Picnic+Ground/@-33.6592946,151.1575591,17z/data=!3m1!4b1!4m5!3m4!1s0x6b0d576db3b8070b:0xdb4a146fbbf4485f!8m2!3d-33.6592946!4d151.1597531</string>
+    <string name="c01_bobbin_head_web_adr">www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/bobbin-head</string>
+
+
 </resources>
