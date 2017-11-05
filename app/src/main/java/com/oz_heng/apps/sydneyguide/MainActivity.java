@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity
 
     static final int CATEGORY_PLACE_TO_VISIT = 0;
     static final int CATEGORY_PICNIC_SPOT = 1;
-    static final int CATEGORY_RESTAURANT = 2;
+    static final int CATEGORY_CHEAP_EATS = 2;
     static final int CATEGOGY_WHAT = 3;
 
     static ArrayList<ArrayList<Location>> listOfListsOfLocations;
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity
                 selectItem(CATEGORY_PICNIC_SPOT);
                 break;
             case R.id.nav_restaurants:
-                selectItem(CATEGORY_RESTAURANT);
+                selectItem(CATEGORY_CHEAP_EATS);
                 break;
             case R.id.nav_what:
                 selectItem(CATEGOGY_WHAT);
@@ -296,11 +296,73 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c01_balls_head_reserve_web_adr))
                 ));
 
-        ArrayList<Location> listOfRestaurants = new ArrayList<>();
+        ArrayList<Location> listOfChaepEats = new ArrayList<>(
+                Arrays.asList(
+                        new Location(getString(R.string.c02_belles_hot_chicken),
+                                R.drawable.c02_belles_hot_chicken,
+                                getString(R.string.c02_belles_hot_chicken_description),
+                                getString(R.string.c02_belles_hot_chicken_address),
+                                getString(R.string.c02_belles_hot_chicken_map_url),
+                                getString(R.string.c02_belles_hot_chicken_web_adr)),
+                        new Location(getString(R.string.c02_bovine_and_swine_barbecue),
+                                R.drawable.c02_bovine_and_swine_barbecue,
+                                getString(R.string.c02_bovine_and_swine_barbecue_description),
+                                getString(R.string.c02_bovine_and_swine_barbecue_address),
+                                getString(R.string.c02_bovine_and_swine_barbecue_map_url),
+                                getString(R.string.c02_bovine_and_swine_barbecue_web_adr)),
+                        new Location(getString(R.string.c02_happy_chef),
+                                R.drawable.c02_happy_chef,
+                                getString(R.string.c02_happy_chef_description),
+                                getString(R.string.c02_happy_chef_address),
+                                getString(R.string.c02_happy_chef_map_url),
+                                getString(R.string.c02_happy_chef_web_adr)),
+                        new Location(getString(R.string.c02_malay_chinese_takeaway),
+                                R.drawable.c02_malay_chinese_takeaway,
+                                getString(R.string.c02_malay_chinese_takeaway_description),
+                                getString(R.string.c02_malay_chinese_takeaway_address),
+                                getString(R.string.c02_malay_chinese_takeaway_map_url),
+                                getString(R.string.c02_malay_chinese_takeaway_web_adr)),
+                        new Location(getString(R.string.c02_casa_do_benfica),
+                                R.drawable.c02_casa_do_benfica,
+                                getString(R.string.c02_casa_do_benfica_description),
+                                getString(R.string.c02_casa_do_benfica_address),
+                                getString(R.string.c02_casa_do_benfica_map_url),
+                                getString(R.string.c02_casa_do_benfica_web_adr)),
+                        new Location(getString(R.string.c02_chatkazz),
+                                R.drawable.c02_chatkazz,
+                                getString(R.string.c02_chatkazz_description),
+                                getString(R.string.c02_chatkazz_address),
+                                getString(R.string.c02_chatkazz_map_url),
+                                getString(R.string.c02_chatkazz_web_adr)),
+                        new Location(getString(R.string.c02_chum_tang),
+                                R.drawable.c02_chum_tang,
+                                getString(R.string.c02_chum_tang_description),
+                                getString(R.string.c02_chum_tang_address),
+                                getString(R.string.c02_chum_tang_map_url),
+                                getString(R.string.c02_chum_tang_web_adr)),
+                       new Location(getString(R.string.c02_kingsford_chinese),
+                                R.drawable.c02_kingsford_chinese,
+                                getString(R.string.c02_kingsford_chinese_description),
+                                getString(R.string.c02_kingsford_chinese_address),
+                                getString(R.string.c02_kingsford_chinese_map_url),
+                                getString(R.string.c02_kingsford_chinese_web_adr)),
+                        new Location(getString(R.string.c02_mr_crackles),
+                                R.drawable.c02_mr_crackles,
+                                getString(R.string.c02_mr_crackles_description),
+                                getString(R.string.c02_mr_crackles_address),
+                                getString(R.string.c02_mr_crackles_map_url),
+                                getString(R.string.c02_mr_crackles_web_adr)),
+                        new Location(getString(R.string.c02_mamak),
+                                R.drawable.c02_mamak,
+                                getString(R.string.c02_mamak_description),
+                                getString(R.string.c02_mamak_address),
+                                getString(R.string.c02_mamak_map_url),
+                                getString(R.string.c02_mamak_web_adr))
+                ));
 
         ArrayList<Location> listOfWhats = new ArrayList<>();
 
         listOfListsOfLocations = new ArrayList<>(Arrays.asList(listOfPlacesToVisit,
-                listOfPicnicSpots, listOfRestaurants, listOfWhats));
+                listOfPicnicSpots, listOfChaepEats, listOfWhats));
     }
 }

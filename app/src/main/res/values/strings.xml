@@ -3,7 +3,7 @@
 
     <string name="places_to_visit">Places to Visit</string>
     <string name="picnic_spots">Picnic Spots</string>
-    <string name="restaurants">Restaurants</string>
+    <string name="restaurants">Great Cheap Eats</string>
     <string name="what">What?</string>
     <string name="exit">Exit</string>
 
@@ -150,4 +150,65 @@
     <string name="c01_balls_head_reserve_address">Balls Head Dr, Waverton NSW 2060</string>
     <string name="c01_balls_head_reserve_map_url">https://www.google.com.au/maps/place/Balls+Head+Reserve/@-33.8466884,151.1875086,15z/data=!4m5!3m4!1s0x6b12ae562ce9ce5b:0xf017d68f9f1e580!8m2!3d-33.8466929!4d151.1962687</string>
     <string name="c01_balls_head_reserve_web_adr">www.northsydney.nsw.gov.au/Recreation_Facilities/Parks_Reserves/Search_Parks/Balls_Head_Reserve</string>
+
+    <!-- Great cheap eats-->
+    <string name="c02_belles_hot_chicken">Belles Hot Chicken</string>
+    <string name="c02_belles_hot_chicken_description">This Sydney outpost of a Melbourne favourite has gone gangbusters since it popped up at Barangaroo. Choose from five levels of heat for your Southern fried chicken wings, tenders and drumsticks. Crumbed mushrooms are satisfying for both vegetarians and meat-eaters. Chicken ribs with peach sauce always sell out fast, or bring your mates for the Baller Bucket of 16 wings, four sides and four sauces.</string>
+    <string name="c02_belles_hot_chicken_address">5/33 Barangaroo Avenue, Barangaroo NSW 2000</string>
+    <string name="c02_belles_hot_chicken_map_url">https://www.google.com.au/maps/place/Belles+Hot+Chicken/@-33.8654283,151.1992159,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae4700186689:0x910214aae72b8873!8m2!3d-33.8654328!4d151.2014099</string>
+    <string name="c02_belles_hot_chicken_web_adr">belleshotchicken.com</string>
+
+    <string name="c02_bovine_and_swine_barbecue">Bovine &amp; Swine Barbecue Co</string>
+    <string name="c02_bovine_and_swine_barbecue_description">Twelve hours of loving care goes into the beef brisket, cooked low and slow over Australian ironbark until the meat is soft and yielding. Revel in the gruntworthy smokiness. By day it\'s brisket or chopped pork on sandwiches with slaw. At night the expanded menu can include pork ribs, whole chickens, pulled lamb and hot link sausages. Splurge on the beef rib for carnivorous contentment.</string>
+    <string name="c02_bovine_and_swine_barbecue_address">92 Enmore Rd, Newtown NSW 2042</string>
+    <string name="c02_bovine_and_swine_barbecue_map_url">https://www.google.com.au/maps/place/Bovine+%26+Swine+Barbecue+Co./@-33.8988965,151.172476,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12b0382f965cd3:0x2a0c6e56b23c48c4!8m2!3d-33.898901!4d151.17467</string>
+    <string name="c02_bovine_and_swine_barbecue_web_adr">www.bovineandswine.com.au</string>
+
+    <string name="c02_happy_chef">Happy Chef</string>
+    <string name="c02_happy_chef_description">Regulars at this Sydney food court legend know all their usual order numbers off by heart. Number 25a is the king prawn and chicken laksa laced with chilli oil. Number 39 yields sweet barbecue pork on crinkly egg noodles. Number 15 is a clear noodle soup brimming with seafood and wontons. Choose between</string>
+    <string name="c02_happy_chef_address">Shop F3/401 Sussex St, Haymarket NSW 2000</string>
+    <string name="c02_happy_chef_map_url">https://www.google.com.au/maps/place/Happy+Chef+Noodle+Restaurant/@-33.8781985,151.20477,17z/data=!4m5!3m4!1s0x6b12ae2357295321:0x155c7b43c29beb5a!8m2!3d-33.8782269!4d151.204491</string>
+    <string name="c02_happy_chef_web_adr">www.facebook.com/happychefsussex</string>
+
+    <string name="c02_malay_chinese_takeaway">Malay Chinese Takeaway</string>
+    <string name="c02_malay_chinese_takeaway_description">Suits and students sit side by side at lunchtime in a chaotic dining room that has the energy of a foodcourt. It\'s laksa heaven here with 11 variations on offer. King prawn? Vegetable? Skinless chicken? No problem. They even sell plastic bibs to protect against embarrassing splashes. Do try the har mee special, an intense prawn noodle soup only served on Tuesdays, Fridays and Saturdays.</string>
+    <string name="c02_malay_chinese_takeaway_address">1/50&#8211;58 Hunter St, Sydney NSW 2000</string>
+    <string name="c02_malay_chinese_takeaway_map_url">https://www.google.com.au/maps/place/Malay+Chinese+Takeaway/@-33.8659001,151.2072775,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae41d444dc2f:0x1a16a310f7ef2eb6!8m2!3d-33.8659046!4d151.2094715</string>
+    <string name="c02_malay_chinese_takeaway_web_adr">www.malaychinese.com.au</string>
+
+    <string name="c02_casa_do_benfica">Casa Do Benfica</string>
+    <string name="c02_casa_do_benfica_description">You wouldn\'t guess this suburban tennis court hides a Portuguese restaurant, a cavernous hall decked out in Lisbon\'s Benfica football club memorabilia. Start with sizzling garlic prawns and move onto espetada beef skewers, bacalhau salted codfish or grilled cuttlefish. Order the round chips and relish old-fashioned hand-cut fried potatoes. Club-sized portions guarantee a substantial meal. Bring your dancing shoes for the live music on weekends.</string>
+    <string name="c02_casa_do_benfica_address">Henson Park, Centennial St, Marrickville NSW 2204</string>
+    <string name="c02_casa_do_benfica_map_url">https://www.google.com.au/maps/place/CASA+DO+BENFICA/@-33.9032173,151.1556906,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12b06ecb13a6fb:0xcc69def6cb77ad47!8m2!3d-33.9032218!4d151.1578846</string>
+    <string name="c02_casa_do_benfica_web_adr">marrickvilletennis.com/tennis/pages/restaurant.shtml</string>
+
+    <string name="c02_chatkazz">Chatkazz</string>
+    <string name="c02_chatkazz_description">Everything is vegetarian here. That\'s 167 options running from south Indian dosai crepes to north Indian paratha flatbreads to the cross-cultural mashup known as Bombay Chinese. Even after its expansion this community stalwart still has hour-long weekend queues. The chaat street-style snacks are cheap and tasty, variations of crunch smothered in yoghurt and tangy tamarind sauce. Don\'t miss their fancy sweets shop around the corner.</string>
+    <string name="c02_chatkazz_address">4/14&#8211;20 Station St E, Harris Park NSW 2150</string>
+    <string name="c02_chatkazz_map_url">https://www.google.com.au/maps/place/Chatkazz/@-33.8222278,151.0059638,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12a32391a840ed:0x6f073e7075b0b448!8m2!3d-33.8222323!4d151.0081578</string>
+    <string name="c02_chatkazz_web_adr">www.chatkazz.com.au</string>
+
+    <string name="c02_chum_tang">Chum Tang</string>
+    <string name="c02_chum_tang_description">Dive into the snack and salad menu for north and north-eastern Thai spiciness by this stylish food court sibling to Khao Plao. We\'re talking crunchy Isaan flavour fried chicken wings, raw beef salad with tripe, and a fiery som tum papaya salad with Thai eggplants and scud chillies. The train station waiting room theme is a deliberate nod to its location above Chatswood railway station.</string>
+    <string name="c02_chum_tang_address">Chatswood Interchange, P4/436 Victoria Ave, Chatswood NSW 2067</string>
+    <string name="c02_chum_tang_map_url">https://www.google.com.au/maps/place/Chum+Tang/@-33.7971758,151.1786077,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12a8d424e300f7:0x6a3c920db329f552!8m2!3d-33.7971803!4d151.1808017</string>
+    <string name="c02_chum_tang_web_adr">www.facebook.com/chumtangchatswood</string>
+
+    <string name="c02_kingsford_chinese">Kingsford Chinese</string>
+    <string name="c02_kingsford_chinese_description">Follow the lead of families and students hunched around laminex tables in this no-frills restaurant and order the house specialties: sang tung chicken – crisp-skin chicken drenched in vinegar, garlic and chilli – and the salt-and-pepper calamari. Get the big-as-a-plate salt and pepper flounder and the strangely comforting sauce-covered Hokkien fried rice too. Order the "aromatic" Malaysian shrimp paste green beans if you dare.</string>
+    <string name="c02_kingsford_chinese_address">426 Anzac Parade, Kingsford NSW 2032</string>
+    <string name="c02_kingsford_chinese_map_url">https://www.google.com.au/maps/place/Kingsford+Chinese+Restaurant+%E6%AD%A1%E6%A8%82%E7%B2%A5%E9%BA%B5%E5%B1%8B/@-33.9214576,151.2247884,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12b18ed1ab22c1:0x3292e3cef1a1c00d!8m2!3d-33.9214621!4d151.2269824</string>
+    <string name="c02_kingsford_chinese_web_adr">simonfoodfavourites.blogspot.com.au/2014/05/kingsford-chinese-restaurant-chinese.html</string>
+
+    <string name="c02_mr_crackles">Mr Crackles</string>
+    <string name="c02_mr_crackles_description">You read that right. You can order crackling by the cup or in whole sheets at this Oxford Street takeaway. The Crackles Classic – juicy roast pork crowned with bubbled crackling and Vietnamese salad in a crusty bread roll – has saved many a hangover. Upgrade to a manwich for twice the meat and half the salad. Add tater tots or chilli cheese fries on the side.</string>
+    <string name="c02_mr_crackles_address">155 Oxford St, Darlinghurst NSW 2010</string>
+    <string name="c02_mr_crackles_map_url">https://www.google.com.au/maps/place/Mr+Crackles/@-33.8800612,151.2137805,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae1753eb531b:0xe595a16e437d0574!8m2!3d-33.8800657!4d151.2159745</string>
+    <string name="c02_mr_crackles_web_adr">mrcrackles.com.au</string>
+
+    <string name="c02_mamak">Mamak</string>
+    <string name="c02_mamak_description">No one makes flaky roti like these masters, oiled and stretched with balletic grace in the front window of this noisy eating house. Start with plain roti, torn up and dipped into curry, and move on to chicken satay skewers, tamarind fish curry and thunderously crunchy Malaysian fried chicken. Share the roti tisu for dessert, a towering party hat of buttery, crisp sugar-encrusted pastry.</string>
+    <string name="c02_mamak_address">15 Goulburn St, Sydney NSW 2000</string>
+    <string name="c02_mamak_map_url">https://www.google.com.au/maps/place/Mamak/@-33.8777016,151.2019923,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae24ab1dbfd1:0xa0dc4bea8e1e248f!8m2!3d-33.8777061!4d151.2041863</string>
+    <string name="c02_mamak_web_adr">mamak.com.au</string>
 </resources>
