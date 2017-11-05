@@ -269,8 +269,31 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c01_west_head_lookout_description),
                                 getString(R.string.c01_west_head_lookout_address),
                                 getString(R.string.c01_west_head_lookout_map_url),
-                                getString(R.string.c01_west_head_lookout_web_adr))
-
+                                getString(R.string.c01_west_head_lookout_web_adr)),
+                        new Location(getString(R.string.c01_barangaroo_reserve),
+                                R.drawable.c01_barangaroo_reserve,
+                                getString(R.string.c01_barangaroo_reserve_description),
+                                getString(R.string.c01_barangaroo_reserve_address),
+                                getString(R.string.c01_barangaroo_reserve_map_url),
+                                getString(R.string.c01_barangaroo_reserve_web_adr)),
+                        new Location(getString(R.string.c01_bicentennial_park),
+                                R.drawable.c01_bicentennial_park,
+                                getString(R.string.c01_bicentennial_park_description),
+                                getString(R.string.c01_bicentennial_park_address),
+                                getString(R.string.c01_bicentennial_park_map_url),
+                                getString(R.string.c01_bicentennial_park_web_adr)),
+                        new Location(getString(R.string.c01_bradfield_park),
+                                R.drawable.c01_bradfield_park,
+                                getString(R.string.c01_bradfield_park_description),
+                                getString(R.string.c01_bradfield_park_address),
+                                getString(R.string.c01_bradfield_park_map_url),
+                                getString(R.string.c01_bradfield_park_web_adr)),
+                       new Location(getString(R.string.c01_balls_head_reserve),
+                                R.drawable.c01_balls_head_reserve,
+                                getString(R.string.c01_balls_head_reserve_description),
+                                getString(R.string.c01_balls_head_reserve_address),
+                                getString(R.string.c01_balls_head_reserve_map_url),
+                                getString(R.string.c01_balls_head_reserve_web_adr))
                 ));
 
         ArrayList<Location> listOfRestaurants = new ArrayList<>();

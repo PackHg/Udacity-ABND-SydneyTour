@@ -126,4 +126,28 @@
     <string name="c01_west_head_lookout_address">Ku-ring-gai Chase National Park, W Head Rd, Ku-Ring-Gai Chase NSW 2084</string>
     <string name="c01_west_head_lookout_map_url">https://www.google.com.au/maps/place/West+Head+Lookout/@-33.5790471,151.2916463,14z/data=!4m5!3m4!1s0x6b0d4d5c61f2475b:0x139c486b16146a87!8m2!3d-33.5790516!4d151.3091558</string>
     <string name="c01_west_head_lookout_web_adr">www.nationalparks.nsw.gov.au/things-to-do/lookouts/west-head-lookout</string>
+
+    <string name="c01_barangaroo_reserve">Barangaroo Reserve</string>
+    <string name="c01_barangaroo_reserve_description">Barangaroo Reserve is a brand new 6-hectare Sydney Harbour foreshore park with a large man-made hill right in the middle. It’s now home to more than 75,000 planted trees, palms, ferns, shrubs and other plants, that have been native to the Sydney region since the last 200 years.\n\nWith so many beautifully designed terraced gardens and different walking paths winding around the hill, Barangaroo reserve is a wonderful place for an afternoon picnic.</string>
+    <string name="c01_barangaroo_reserve_address">Hickson Rd, Barangaroo NSW 2000</string>
+    <string name="c01_barangaroo_reserve_map_url">https://www.google.com.au/maps/place/Barangaroo+Reserve/@-33.8572035,151.1990173,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae5b3116e3b3:0xff86b5856c93b437!8m2!3d-33.857208!4d151.201206</string>
+    <string name="c01_barangaroo_reserve_web_adr">www.barangaroo.com</string>
+
+    <string name="c01_bicentennial_park">Bicentennial Park - Sydney Olympic Park</string>
+    <string name="c01_bicentennial_park_description">Bicentennial Park is a diverse natural asset combining the Badu Mangroves wetlands on Homebush Bay with 40 hectares of beautiful parklands in Sydney featuring gentle hills, lakeside meadows and soothing green vistas.\n\n This Sydney park features playgrounds, picnic shelters, BBQ, toilets and several car parks. It’s open every day of the year, sunrise to sunset.</string>
+    <string name="c01_bicentennial_park_address">Australia Ave, Sydney Olympic Park NSW 2127</string>
+    <string name="c01_bicentennial_park_map_url">https://www.google.com.au/maps/place/Bicentennial+Park,+Sydney+Olympic+Park/@-33.8499693,151.0770985,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12a50acd3571a9:0xf81967ea238d284f!8m2!3d-33.8499738!4d151.0792872</string>
+    <string name="c01_bicentennial_park_web_adr">www.sydneyolympicpark.com.au/whats_on/parks/bicentennial_park</string>
+
+    <string name="c01_bradfield_park">Bradfield Park</string>
+    <string name="c01_bradfield_park_description">Located right under the Harbour Bridge in Kirribilli, Bradfield Park is a very relaxing spot for a picnic. Right next to Luna Park and the Olympic Pool, the park offers pleasant views of Circular Quay and the massive Cruise Ships that regularly pass by.\n\nIt’s best to travel to Bradfield Park by train, getting off at Milsons Point train station. Alternatively, there is metered street parking close by.</string>
+    <string name="c01_bradfield_park_address">Alfred St S, Milsons Point NSW 2061</string>
+    <string name="c01_bradfield_park_map_url">https://www.google.com.au/maps/place/Bradfield+Park/@-33.8483155,151.2099925,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae8a802f796d:0xf017d68f9f1e7f0!8m2!3d-33.84832!4d151.2121812</string>
+    <string name="c01_bradfield_park_web_adr">www.northsydney.nsw.gov.au/Recreation_Facilities/Parks_Reserves/Search_Parks/Bradfield_Park</string>
+
+    <string name="c01_balls_head_reserve">Balls Head Reserve</string>
+    <string name="c01_balls_head_reserve_description">Perhaps not as well-known, Balls Head Reserve in the Sydney lower north shore is a true bushland oasis overlooking Sydney Harbour. The picnic areas on this peninsula are nicely maintained, with several tables and BBQ’s, a water fountain and toilet facilities.\n\nHistoric Waverton Peninsula Reserve, next door to Balls Head Reserve, is also a great place to visit, with serene walking trails and pretty views.</string>
+    <string name="c01_balls_head_reserve_address">Balls Head Dr, Waverton NSW 2060</string>
+    <string name="c01_balls_head_reserve_map_url">https://www.google.com.au/maps/place/Balls+Head+Reserve/@-33.8466884,151.1875086,15z/data=!4m5!3m4!1s0x6b12ae562ce9ce5b:0xf017d68f9f1e580!8m2!3d-33.8466929!4d151.1962687</string>
+    <string name="c01_balls_head_reserve_web_adr">www.northsydney.nsw.gov.au/Recreation_Facilities/Parks_Reserves/Search_Parks/Balls_Head_Reserve</string>
 </resources>
