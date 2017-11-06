@@ -360,7 +360,16 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c02_mamak_web_adr))
                 ));
 
-        ArrayList<Location> listOfWhats = new ArrayList<>();
+        ArrayList<Location> listOfWhats = new ArrayList<>(
+                Arrays.asList(
+                        new Location(getString(R.string.c03_opera_bar),
+                                R.drawable.c03_opera_bar,
+                                getString(R.string.c03_opera_bar_description),
+                                getString(R.string.c03_opera_bar_address),
+                                getString(R.string.c03_opera_bar_map_url),
+                                getString(R.string.c03_opera_bar_web_adr))
+
+                        ));
 
         listOfListsOfLocations = new ArrayList<>(Arrays.asList(listOfPlacesToVisit,
                 listOfPicnicSpots, listOfChaepEats, listOfWhats));
