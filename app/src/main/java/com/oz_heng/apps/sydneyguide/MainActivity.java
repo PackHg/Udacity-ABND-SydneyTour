@@ -367,7 +367,13 @@ public class MainActivity extends AppCompatActivity
                                 getString(R.string.c03_opera_bar_description),
                                 getString(R.string.c03_opera_bar_address),
                                 getString(R.string.c03_opera_bar_map_url),
-                                getString(R.string.c03_opera_bar_web_adr))
+                                getString(R.string.c03_opera_bar_web_adr)),
+                        new Location(getString(R.string.c03_cafe_sydney),
+                                R.drawable.c03_cafe_sydney,
+                                getString(R.string.c03_cafe_sydney_description),
+                                getString(R.string.c03_cafe_sydney_address),
+                                getString(R.string.c03_cafe_sydney_map_url),
+                                getString(R.string.c03_cafe_sydney_web_adr))
 
                         ));
 

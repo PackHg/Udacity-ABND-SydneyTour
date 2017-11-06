@@ -219,4 +219,10 @@
     <string name="c03_opera_bar_map_url">https://www.google.com.au/maps/place/Opera+Bar/@-33.8583877,151.2117862,17z/data=!3m2!4b1!5s0x6b12ae665c2eb551:0x1f2272a68bd18876!4m5!3m4!1s0x6b12ae66606e9307:0xaae6de95a404143a!8m2!3d-33.8583922!4d151.2139749</string>
     <string name="c03_opera_bar_web_adr">operabar.com.au</string>
 
+    <string name="c03_cafe_sydney">Café Sydney</string>
+    <string name="c03_cafe_sydney_description">This café o ers one of the most spectacular views in Sydney. Atop the historic Customs House with views of Circular Quay, the Sydney Harbour Bridge, and Sydney Opera House, it’s hard to ignore. Enjoy a pre-dinner cocktail or glass of wine from the extensive wine list. And although you may start with a beverage in mind, if the view draws you in, you can also enjoy a ne dining experience. Bookings recommended.</string>
+    <string name="c03_cafe_sydney_address">Sydney Customs House, 31 Alfred St, Sydney NSW 2000</string>
+    <string name="c03_cafe_sydney_map_url">https://www.google.com.au/maps/place/Cafe+Sydney/@-33.8620631,151.2112264,15z/data=!4m8!1m2!2m1!1scafe+sydney!3m4!1s0x6b12ae12036ba839:0x9639644389a79388!8m2!3d-33.861735!4d151.2108729</string>
+    <string name="c03_cafe_sydney_web_adr">cafesydney.com</string>
+
 </resources>
