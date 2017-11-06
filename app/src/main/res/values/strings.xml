@@ -220,9 +220,50 @@
     <string name="c03_opera_bar_web_adr">operabar.com.au</string>
 
     <string name="c03_cafe_sydney">Café Sydney</string>
-    <string name="c03_cafe_sydney_description">This café o ers one of the most spectacular views in Sydney. Atop the historic Customs House with views of Circular Quay, the Sydney Harbour Bridge, and Sydney Opera House, it’s hard to ignore. Enjoy a pre-dinner cocktail or glass of wine from the extensive wine list. And although you may start with a beverage in mind, if the view draws you in, you can also enjoy a ne dining experience. Bookings recommended.</string>
+    <string name="c03_cafe_sydney_description">This café offers one of the most spectacular views in Sydney. Atop the historic Customs House with views of Circular Quay, the Sydney Harbour Bridge, and Sydney Opera House, it’s hard to ignore. Enjoy a pre-dinner cocktail or glass of wine from the extensive wine list. And although you may start with a beverage in mind, if the view draws you in, you can also enjoy a fine dining experience. Bookings recommended.</string>
     <string name="c03_cafe_sydney_address">Sydney Customs House, 31 Alfred St, Sydney NSW 2000</string>
     <string name="c03_cafe_sydney_map_url">https://www.google.com.au/maps/place/Cafe+Sydney/@-33.8620631,151.2112264,15z/data=!4m8!1m2!2m1!1scafe+sydney!3m4!1s0x6b12ae12036ba839:0x9639644389a79388!8m2!3d-33.861735!4d151.2108729</string>
     <string name="c03_cafe_sydney_web_adr">cafesydney.com</string>
 
+    <string name="c03_the_basement">The Basement</string>
+    <string name="c03_the_basement_description">One of the country’s foremost clubs for live jazz, acoustic, folk, funk, blues, world and soul, this place has an adventurous regular line-up of local and international musicians. In this intimate venue, you’ll never be far from the action, but choose how close with cabaret-style tables (for a pre-show supper or snack perhaps?) near the stage or an elevated bar at the back. Acts appear every night, so it’s best to book ahead.</string>
+    <string name="c03_the_basement_address">7 Macquarie Place, Sydney NSW 2000</string>
+    <string name="c03_the_basement_map_url">https://www.google.com.au/maps/place/The+Basement/@-33.86283,151.207722,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae420bad9833:0xaf5ea66b0994e049!8m2!3d-33.86283!4d151.209916</string>
+    <string name="c03_the_basement_web_adr">www.thebasement.com.au</string>
+
+    <string name="c03_chinese_laundry">Chinese Laundry</string>
+    <string name="c03_chinese_laundry_description">Tucked underneath the Slip Inn, Chinese Laundry is one of Sydney’s largest and oldest clubs. The venue’s three floors cater to a variety of music genres—from electro to RnB; house to hip-hop. And if the low ceilings, packed crowds, and pounding bass inside become too much, head outside to the courtyard garden bar and outdoor dance floor.</string>
+    <string name="c03_chinese_laundry_address">111 Sussex Street, Sydney NSW 2000</string>
+    <string name="c03_chinese_laundry_map_url">https://www.google.com.au/maps/place/Chinese+Laundry/@-33.8686335,151.201233,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae38c64536f9:0xd8d0d3fb9ba60096!8m2!3d-33.868638!4d151.203427</string>
+    <string name="c03_chinese_laundry_web_adr">chineselaundryclub.com.au</string>
+
+    <string name="c03_annandale_hotel">Annandale Hotel</string>
+    <string name="c03_annandale_hotel_description">The Annandale Hotel is one of the best centrally located venues for up-and-coming bands. Since opening its doors in the 1930s, this Aussie pub has played host to a plethora of bands spanning genres. Numerous artists have graced its stage including The Cat Empire, The Dandy Warhols, Sarah Blasko and Newton Faulkner. This is a true Sydney rock ‘n’ roll institution.</string>
+    <string name="c03_annandale_hotel_address">117 Parramatta Road, Sydney NSW 2038</string>
+    <string name="c03_annandale_hotel_map_url">https://www.google.com.au/maps/place/Annandale+Hotel/@-33.887409,151.1693131,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae6a0caaba05:0xb12285d36922851f!8m2!3d-33.8874135!4d151.1715071</string>
+    <string name="c03_annandale_hotel_web_adr">www.annandalehotel.com</string>
+
+    <string name="c03_home">Home</string>
+    <string name="c03_home_description">A self-proclaimed ‘super-club’, Home is definitely one of the most popular clubbing haunts in the city. And with four different ‘rooms’ playing a variety of music, including funk, techno, two-step and disco, it’s easy to see why. There are also chill-out areas, balconies and a great VIP lounge. Though drinks err on the side of pricey, if you’re in the mood for a big night, then this is the place to go.</string>
+    <string name="c03_home_address">101/1&#8211;5 Wheat Rd, Darling Harbour NSW 2000</string>
+    <string name="c03_home_map_url">https://www.google.com.au/maps/place/Home+The+Venue/@-33.8727301,151.1997681,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae3bd858a42d:0x7bd833b3f0960892!8m2!3d-33.8727346!4d151.2019621</string>
+    <string name="c03_home_web_adr">www.homesydney.com</string>
+
+    <string name="c03_grasshopper">Grasshopper</string>
+    <string name="c03_grasshopper_description">This sensationally Melbourne-esque “laneway bar” is typical of the ‘small bar’ trend in Sydney and one not to be missed. At first it may seem like you’re being led down a dark laneway to be mugged, but fear not — this gem is a delightful surprise. Enjoy a cocktail from their quirky list or a sensational vino from their wine list; it’s a perfect spot for a pre-dinner beverage.</string>
+    <string name="c03_grasshopper_address">1 Temperance Lane, Sydney NSW 2000</string>
+    <string name="c03_grasshopper_map_url">https://www.google.com.au/maps/place/Grasshopper+Eating+House+and+Bar/@-33.8696555,151.204342,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae3f120e365f:0x42b9045809608dca!8m2!3d-33.86966!4d151.206536</string>
+    <string name="c03_grasshopper_web_adr">thegrasshopperbar.com</string>
+
+    <string name="c03_arq">ARQ</string>
+    <string name="c03_arq_description">Boasting one of the city’s best sound systems and lighting rigs, this spacious, two-level club is by far the best decked-out club in the GLBT scene. Expect a mix of house, dance and trance – along with commercial music downstairs – and a bevy of pretty shirtless boys and carefree, straight women enjoying a hassle-free night out. No cheese, no shirts and no attitude.</string>
+    <string name="c03_arq_address">16 Flinders St, Darlinghurst NSW 2010</string>
+    <string name="c03_arq_map_url">https://www.google.com.au/maps/place/ARQ+Sydney/@-33.8814025,151.2171395,17z/data=!4m12!1m6!3m5!1s0x6b12ae1a0ce54841:0xb5f122c47425f37!2sARQ+Sydney!8m2!3d-33.8813991!4d151.2173124!3m4!1s0x6b12ae1a0ce54841:0xb5f122c47425f37!8m2!3d-33.8813991!4d151.2173124</string>
+    <string name="c03_arq_web_adr">arqsydney.com.au</string>
+
+    <string name="c03_qudos_bank_arena">Qudos Bank Arena</string>
+    <string name="c03_qudos_bank_arena_description">Originally built for the Sydney 2000 Olympics, Qudos Bank Arena has established itself as one of the most well-known live music venues around. Here bookings from luminaries such as Beyoncé, Madonna, Stevie Wonder, Taylor Swift and Lady Gaga are common week-to-week. With these international pop stars come the legions of fans happy to pay top dollar for a night of high-energy arena spectacular.</string>
+    <string name="c03_qudos_bank_arena_address">Edwin Flack Ave &amp; Olympic Blvd, Sydney Olympic Park NSW 2127</string>
+    <string name="c03_qudos_bank_arena_map_url">https://www.google.com.au/maps/place/Qudos+Bank+Arena/@-33.8440668,151.0637204,17z/data=!4m12!1m6!3m5!1s0x6b12a4b08ed5bcb3:0x1b040938318011e5!2sQudos+Bank+Arena!8m2!3d-33.844364!4d151.062145!3m4!1s0x6b12a4b08ed5bcb3:0x1b040938318011e5!8m2!3d-33.844364!4d151.062145</string>
+    <string name="c03_qudos_bank_arena_web_adr">www.qudosbankarena.com.au</string>
 </resources>
