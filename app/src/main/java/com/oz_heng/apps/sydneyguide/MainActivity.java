@@ -1,5 +1,6 @@
 package com.oz_heng.apps.sydneyguide;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -10,7 +11,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
+import android.util.Log;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
@@ -21,23 +22,56 @@ public class MainActivity extends AppCompatActivity
         ListFragment.OnListFragmentInteractionListener,
         LocationFragment.OnLocationFragmentInteractionListener {
 
+    static final String LOG_TAG = MainActivity.class.getSimpleName();
+
+    // Constants for identifying the categories of locations
     static final int CATEGORY_PLACE_TO_VISIT = 0;
     static final int CATEGORY_PICNIC_SPOT = 1;
     static final int CATEGORY_CHEAP_EATS = 2;
-    static final int CATEGOGY_WHAT = 3;
+    static final int CATEGOGY_NIGHTLIFE = 3;
 
+    // Locations data
     static ArrayList<ArrayList<Location>> listOfListsOfLocations;
+    // Array of category names
     static String[] categoriesArray;
-    int categoryNumber = 0;
+
+    // Current category number
+    int currentCategoryNbr = CATEGORY_PLACE_TO_VISIT;
+    int currentLocationNbr = 0;
+
+    // Constants identifying the current view (list or location)
+    static final int LIST_VIEW = 0;
+    static final int LOCATION_VIEW = 1;
+
+    // Current view, list by default
+    int currentView = LIST_VIEW;
 
     Toolbar toolbar;
     NavigationView navigationView;
     DrawerLayout drawer;
 
+    // Tags used to save user data with SharedPreferences
+    static final String USER_DATA = "com.oz_heng.apps.sydneyguide.userData";
+    static final String KEY_CATEGORY = "category";
+    static final String KEY_LOCATION = "location";
+    static final String KEY_VIEW = "view";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Restore user data from SharedPreferences
+        SharedPreferences sp = getSharedPreferences(USER_DATA, 0);
+        if (sp != null) {
+            currentCategoryNbr = sp.getInt(KEY_CATEGORY, currentCategoryNbr);
+            currentLocationNbr = sp.getInt(KEY_LOCATION, currentLocationNbr);
+            currentView = sp.getInt(KEY_VIEW, currentView);
+        }
+
+        Log.v(LOG_TAG, "onCreate() - currentCategoryNbr: " + currentCategoryNbr);
+        Log.v(LOG_TAG, "onCreate() - currentLocationNbr: " + currentLocationNbr);
+        Log.v(LOG_TAG, "onCreate() - currentView: " + currentView);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -53,7 +87,11 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         populateLocationsData();
 
-        selectItem(categoryNumber);
+        if (currentView == LOCATION_VIEW) {
+            selectLocationItem(currentCategoryNbr, currentLocationNbr);
+        } else {
+            selectCategoryItem(currentCategoryNbr);
+        }
     }
 
     @Override
@@ -65,41 +103,24 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem  item) {
-        // Handle navigation view item clicks here.
+        // Handle navigation currentView item clicks here.
         int id = item.getItemId();
 
         switch (id) {
             case R.id.nav_places_visit:
-                selectItem(CATEGORY_PLACE_TO_VISIT);
+                selectCategoryItem(CATEGORY_PLACE_TO_VISIT);
                 break;
             case R.id.nav_picnic_spots:
-                selectItem(CATEGORY_PICNIC_SPOT);
+                selectCategoryItem(CATEGORY_PICNIC_SPOT);
                 break;
             case R.id.nav_restaurants:
-                selectItem(CATEGORY_CHEAP_EATS);
+                selectCategoryItem(CATEGORY_CHEAP_EATS);
                 break;
             case R.id.nav_what:
-                selectItem(CATEGOGY_WHAT);
+                selectCategoryItem(CATEGOGY_NIGHTLIFE);
                 break;
             case R.id.nav_exit:
                 finish();   // Close the activity.
@@ -114,15 +135,18 @@ public class MainActivity extends AppCompatActivity
      * selected item and the action bar title.
      * @param category Selected categoryNumber.
      */
-    private void selectItem(int category) {
+    private void selectCategoryItem(int category) {
+        // Update navigation's selected item and action bar title.
+        navigationView.getMenu().getItem(category).setChecked(true);
+        setTitle(categoriesArray[category]);
+
+        currentCategoryNbr = category;
+        currentView = LIST_VIEW;
+
         // Update the main content by replacing the fragment.
         ListFragment fragment = ListFragment.newInstance(category);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
-
-        // Update navigation's selected item and action bar title.
-        navigationView.getMenu().getItem(category).setChecked(true);
-        setTitle(categoriesArray[category]);
     }
 
     /**
@@ -143,15 +167,19 @@ public class MainActivity extends AppCompatActivity
      * @param location_nbr Number identifying the selected location.
      */
     @Override
-    public void selectLocationFragment(int category_nbr, int location_nbr) {
+    public void selectLocationItem(int category_nbr, int location_nbr) {
+        // Set the title with the location name.
+        Location location = listOfListsOfLocations.get(category_nbr).get(location_nbr);
+        setTitle(location.getName());
+
+        currentCategoryNbr = category_nbr;
+        currentLocationNbr = location_nbr;
+        currentView = LOCATION_VIEW;
+
         // Update the main content by replacing the fragment.
         LocationFragment fragment = LocationFragment.newInstance(category_nbr, location_nbr);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
-
-        // Set the title with the location name.
-        Location location = listOfListsOfLocations.get(category_nbr).get(location_nbr);
-        setTitle(location.getName());
     }
 
     /**
@@ -161,10 +189,29 @@ public class MainActivity extends AppCompatActivity
      */
     @Override
     public void backToListFragment(int categoryNumber) {
-        selectItem(categoryNumber);
+        selectCategoryItem(categoryNumber);
     }
 
-    /*
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        // Save user data into SharedPreferences
+        SharedPreferences sp = getSharedPreferences(USER_DATA, 0);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putInt(KEY_CATEGORY, currentCategoryNbr);
+        editor.putInt(KEY_LOCATION, currentLocationNbr);
+        editor.putInt(KEY_VIEW, currentView);
+        editor.apply();
+
+
+        Log.v(LOG_TAG, "onStop() - currentCategoryNbr: " + currentCategoryNbr);
+        Log.v(LOG_TAG, "onStop() - currentLocationNbr: " + currentLocationNbr);
+        Log.v(LOG_TAG, "onStop() - currentView: " + currentView);
+    }
+
+    /**
      * Populate the locations data.
      */
     private void populateLocationsData() {

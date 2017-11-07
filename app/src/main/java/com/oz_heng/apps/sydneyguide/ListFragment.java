@@ -78,7 +78,7 @@ public class ListFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                mListener.selectLocationFragment(categoryNumber, i);
+                mListener.selectLocationItem(categoryNumber, i);
             }
         });
 
@@ -94,7 +94,7 @@ public class ListFragment extends Fragment {
          * @param category Selected categoryNumber.
          * @param location Selected location.
          */
-        void selectLocationFragment(int category, int location);
+        void selectLocationItem(int category, int location);
     }
 
     /**
