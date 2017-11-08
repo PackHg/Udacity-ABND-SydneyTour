@@ -7,8 +7,11 @@
     <string name="what">Nightlife</string>
     <string name="exit">Exit</string>
 
-    <string name="OK">OK</string>
     <string name="picture_description">Picture of the location</string>
+    <string name="OK">OK</string>
+    <string name="confirm_exit">Do you to exit?</string>
+    <string name="stay">Stay</string>
+    <string name="leave">Leave</string>
 
     <string-array name="categories_array">
         <item>@string/places_to_visit</item>

@@ -1,5 +1,6 @@
 package com.oz_heng.apps.sydneyguide;
 
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,6 +10,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -98,6 +100,10 @@ public class MainActivity extends AppCompatActivity
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+        } else if (currentView == LOCATION_VIEW) {
+            selectCategoryItem(currentCategoryNbr);
+        } else if (currentView == LIST_VIEW) {
+            confirmExit();
         } else {
             super.onBackPressed();
         }
@@ -209,6 +215,32 @@ public class MainActivity extends AppCompatActivity
         Log.v(LOG_TAG, "onStop() - currentCategoryNbr: " + currentCategoryNbr);
         Log.v(LOG_TAG, "onStop() - currentLocationNbr: " + currentLocationNbr);
         Log.v(LOG_TAG, "onStop() - currentView: " + currentView);
+    }
+
+    /**
+     * Show an AlertDialof for the user to confirm exiting.
+     */
+    private void confirmExit() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.confirm_exit);
+        builder.setPositiveButton(R.string.leave, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                if (dialogInterface != null) {
+                    finish(); // Close the Activity
+                }
+            }
+        });
+        builder.setNegativeButton(R.string.stay, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                if (dialogInterface != null) {
+                    dialogInterface.dismiss();
+                }
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
     /**
