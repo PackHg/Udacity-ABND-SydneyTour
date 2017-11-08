@@ -4,7 +4,6 @@ package com.oz_heng.apps.sydneyguide;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,14 +19,15 @@ import static com.oz_heng.apps.sydneyguide.MainActivity.listOfListsOfLocations;
 
 
 /**
- * {@link ListFragment} class pertaining to a list of {@link Location}.
+ * {@link ListFragment} class displaying to a list of {@link Location}.
  */
 public class ListFragment extends Fragment {
-    private static final String LOG_TAG = ListFragment.class.getSimpleName();
 
     static final String ARG_CATEGORY_NUMBER = "category_number";
+    static final String ARG_LOCATION_NUMBER = "location_number";
 
-    private int categoryNumber;
+    private int categoryNbr;
+    private int locationNbr;
 
     private Unbinder unbinder;
 
@@ -41,13 +41,14 @@ public class ListFragment extends Fragment {
      * Factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param category Selected categoryNumber.
+     * @param categoryNbr Selected category number.
      * @return A new instance of ListFragment.
      */
-    public static ListFragment newInstance(int category) {
+    public static ListFragment newInstance(int categoryNbr, int locationNbr) {
         ListFragment fragment = new ListFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_CATEGORY_NUMBER, category);
+        args.putInt(ARG_CATEGORY_NUMBER, categoryNbr);
+        args.putInt(ARG_LOCATION_NUMBER, locationNbr);
         fragment.setArguments(args);
         return fragment;
     }
@@ -56,29 +57,31 @@ public class ListFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            categoryNumber = getArguments().getInt(ARG_CATEGORY_NUMBER);
+            categoryNbr = getArguments().getInt(ARG_CATEGORY_NUMBER);
+            locationNbr = getArguments().getInt(ARG_LOCATION_NUMBER);
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.v(LOG_TAG, "onCreateView()");
-
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         unbinder = ButterKnife.bind(this, view);
 
         // Setup a LocationAdapter for the GridView.
         ListView listView = view.findViewById(R.id.list_view);
-        ArrayList<Location> locations = listOfListsOfLocations.get(categoryNumber);
+        ArrayList<Location> locations = listOfListsOfLocations.get(categoryNbr);
         LocationAdapter locationAdapter = new LocationAdapter(getContext(), locations);
         listView.setAdapter(locationAdapter);
+
+        // Sets the currently selected item.
+        listView.setSelection(locationNbr);
 
         // Setup an OnItemClickListener on the GridView.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                mListener.selectLocationItem(categoryNumber, i);
+                mListener.selectLocationItem(categoryNbr, i);
             }
         });
 
@@ -90,11 +93,11 @@ public class ListFragment extends Fragment {
      */
     interface OnListFragmentInteractionListener {
         /**
-         * To launch the {@link LocationFragment} with the selected categoryNumber and location.
-         * @param category Selected categoryNumber.
-         * @param location Selected location.
+         * To launch the {@link LocationFragment} with the selected categoryNbr and location.
+         * @param categoryNbr Selected category number.
+         * @param locationNbr Selected location number.
          */
-        void selectLocationItem(int category, int location);
+        void selectLocationItem(int categoryNbr, int locationNbr);
     }
 
     /**

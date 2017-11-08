@@ -13,7 +13,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
@@ -23,8 +22,6 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         ListFragment.OnListFragmentInteractionListener,
         LocationFragment.OnLocationFragmentInteractionListener {
-
-    static final String LOG_TAG = MainActivity.class.getSimpleName();
 
     // Constants for identifying the categories of locations
     static final int CATEGORY_PLACE_TO_VISIT = 0;
@@ -71,10 +68,6 @@ public class MainActivity extends AppCompatActivity
             currentView = sp.getInt(KEY_VIEW, currentView);
         }
 
-        Log.v(LOG_TAG, "onCreate() - currentCategoryNbr: " + currentCategoryNbr);
-        Log.v(LOG_TAG, "onCreate() - currentLocationNbr: " + currentLocationNbr);
-        Log.v(LOG_TAG, "onCreate() - currentView: " + currentView);
-
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -92,7 +85,7 @@ public class MainActivity extends AppCompatActivity
         if (currentView == LOCATION_VIEW) {
             selectLocationItem(currentCategoryNbr, currentLocationNbr);
         } else {
-            selectCategoryItem(currentCategoryNbr);
+            selectCategoryItem(currentCategoryNbr, currentLocationNbr);
         }
     }
 
@@ -101,7 +94,7 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else if (currentView == LOCATION_VIEW) {
-            selectCategoryItem(currentCategoryNbr);
+            selectCategoryItem(currentCategoryNbr, currentLocationNbr);
         } else if (currentView == LIST_VIEW) {
             confirmExit();
         } else {
@@ -117,16 +110,16 @@ public class MainActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_places_visit:
-                selectCategoryItem(CATEGORY_PLACE_TO_VISIT);
+                selectCategoryItem(CATEGORY_PLACE_TO_VISIT, 0);
                 break;
             case R.id.nav_picnic_spots:
-                selectCategoryItem(CATEGORY_PICNIC_SPOT);
+                selectCategoryItem(CATEGORY_PICNIC_SPOT, 0);
                 break;
             case R.id.nav_restaurants:
-                selectCategoryItem(CATEGORY_CHEAP_EATS);
+                selectCategoryItem(CATEGORY_CHEAP_EATS, 0);
                 break;
             case R.id.nav_what:
-                selectCategoryItem(CATEGOGY_NIGHTLIFE);
+                selectCategoryItem(CATEGOGY_NIGHTLIFE, 0);
                 break;
             case R.id.nav_exit:
                 finish();   // Close the activity.
@@ -139,18 +132,20 @@ public class MainActivity extends AppCompatActivity
     /**
      * Launches the {@link ListFragment} with the selected categoty, updates the navigation's
      * selected item and the action bar title.
-     * @param category Selected categoryNumber.
+     * @param categoryNbr Selected category number.
+     * @param locationNbr Selected location number;
      */
-    private void selectCategoryItem(int category) {
+    private void selectCategoryItem(int categoryNbr, int locationNbr) {
         // Update navigation's selected item and action bar title.
-        navigationView.getMenu().getItem(category).setChecked(true);
-        setTitle(categoriesArray[category]);
+        navigationView.getMenu().getItem(categoryNbr).setChecked(true);
+        setTitle(categoriesArray[categoryNbr]);
 
-        currentCategoryNbr = category;
+        currentCategoryNbr = categoryNbr;
+        currentLocationNbr = locationNbr;
         currentView = LIST_VIEW;
 
         // Update the main content by replacing the fragment.
-        ListFragment fragment = ListFragment.newInstance(category);
+        ListFragment fragment = ListFragment.newInstance(categoryNbr, locationNbr);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
     }
@@ -191,11 +186,12 @@ public class MainActivity extends AppCompatActivity
     /**
      * Callback from {@link LocationFragment} to this host Activity, after the user clicks
      * on the "OK" button: go back to the {@link ListFragment} with the selected categoryNumber.
-     * @param categoryNumber Selected category number.
+     * @param categoryNbr Selected category number.
+     * @param locationNbr Selected location number.
      */
     @Override
-    public void backToListFragment(int categoryNumber) {
-        selectCategoryItem(categoryNumber);
+    public void backToListFragment(int categoryNbr, int locationNbr) {
+        selectCategoryItem(categoryNbr, locationNbr);
     }
 
 
@@ -210,11 +206,6 @@ public class MainActivity extends AppCompatActivity
         editor.putInt(KEY_LOCATION, currentLocationNbr);
         editor.putInt(KEY_VIEW, currentView);
         editor.apply();
-
-
-        Log.v(LOG_TAG, "onStop() - currentCategoryNbr: " + currentCategoryNbr);
-        Log.v(LOG_TAG, "onStop() - currentLocationNbr: " + currentLocationNbr);
-        Log.v(LOG_TAG, "onStop() - currentView: " + currentView);
     }
 
     /**
