@@ -19,7 +19,9 @@ import static com.oz_heng.apps.sydneyguide.MainActivity.listOfListsOfLocations;
 
 
 /**
- * {@link ListFragment} class displaying to a list of {@link Location}.
+ * {@link ListFragment} class displaying a list of {@link Location} based on the selected category
+ * number.
+ * The location number is for the {@link ListView} to focus on the location that has been selected.
  */
 public class ListFragment extends Fragment {
 
@@ -42,6 +44,7 @@ public class ListFragment extends Fragment {
      * this fragment using the provided parameters.
      *
      * @param categoryNbr Selected category number.
+     * @param locationNbr Selected location number.
      * @return A new instance of ListFragment.
      */
     public static ListFragment newInstance(int categoryNbr, int locationNbr) {
@@ -93,7 +96,7 @@ public class ListFragment extends Fragment {
      */
     interface OnListFragmentInteractionListener {
         /**
-         * To launch the {@link LocationFragment} with the selected categoryNbr and location.
+         * To launch the {@link LocationFragment} with the selected category and location.
          * @param categoryNbr Selected category number.
          * @param locationNbr Selected location number.
          */

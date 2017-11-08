@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity
         ListFragment.OnListFragmentInteractionListener,
         LocationFragment.OnLocationFragmentInteractionListener {
 
-    // Constants for identifying the categories of locations
+    // Constants for identifying the location categories.
     static final int CATEGORY_PLACE_TO_VISIT = 0;
     static final int CATEGORY_PICNIC_SPOT = 1;
     static final int CATEGORY_CHEAP_EATS = 2;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
     // Array of category names
     static String[] categoriesArray;
 
-    // Current category number
+    // Current category and location numbers
     int currentCategoryNbr = CATEGORY_PLACE_TO_VISIT;
     int currentLocationNbr = 0;
 
@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         populateLocationsData();
 
+        // Show the view corresponding to current selections.
         if (currentView == LOCATION_VIEW) {
             selectLocationItem(currentCategoryNbr, currentLocationNbr);
         } else {
@@ -122,7 +123,8 @@ public class MainActivity extends AppCompatActivity
                 selectCategoryItem(CATEGOGY_NIGHTLIFE, 0);
                 break;
             case R.id.nav_exit:
-                finish();   // Close the activity.
+                // Close the activity.
+                finish();
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -164,7 +166,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Callback from {@link ListFragment} to this host Activity to select the location
      * corresponding the the following parameters.
-     * @param category_nbr Number identifying the corresponding categoryNumber.
+     * @param category_nbr Number identifying the selected category.
      * @param location_nbr Number identifying the selected location.
      */
     @Override
@@ -185,7 +187,8 @@ public class MainActivity extends AppCompatActivity
 
     /**
      * Callback from {@link LocationFragment} to this host Activity, after the user clicks
-     * on the "OK" button: go back to the {@link ListFragment} with the selected categoryNumber.
+     * on the "OK" button: go back to the {@link ListFragment} with the selected category and
+     * location.
      * @param categoryNbr Selected category number.
      * @param locationNbr Selected location number.
      */
@@ -209,7 +212,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     /**
-     * Show an AlertDialof for the user to confirm exiting.
+     * Display an AlertDialog for the user to confirm exiting.
      */
     private void confirmExit() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -218,7 +221,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (dialogInterface != null) {
-                    finish(); // Close the Activity
+                    // Close the Activity.
+                    finish();
                 }
             }
         });

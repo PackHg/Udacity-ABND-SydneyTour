@@ -19,7 +19,8 @@ import butterknife.Unbinder;
 import static com.oz_heng.apps.sydneyguide.MainActivity.listOfListsOfLocations;
 
 /**
- * Fragment displaying a location data.
+ * Fragment displaying a location data according to the selected category
+ * and location numbers.
  */
 public class LocationFragment extends Fragment {
     private static final String ARG_CATEGORY_NUMBER = "category_number";
@@ -111,8 +112,8 @@ public class LocationFragment extends Fragment {
     }
 
     /**
-     * Checks if the hosting Activity implements {@link OnLocationFragmentInteractionListener} interface.
-     * If not, throws a {@link RuntimeException}.
+     * Checks if the hosting Activity implements {@link OnLocationFragmentInteractionListener}
+     * interface. If not, throws a {@link RuntimeException}.
      * @param context The Activity context.
      */
     @Override
