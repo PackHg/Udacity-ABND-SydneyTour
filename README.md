@@ -20,6 +20,14 @@ This app contains four lists: places to visit, picnic spots, cheap eats and nigh
 <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen05.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen06.png" width="300">
 
 
+This app is for educational purpose only. The location data are from the following sources:
+* Google Maps
+* https://www.sydney.com
+* https://www.bestsydneywalks.com/best-picnic-spots-in-sydney
+* https://www.worldtravelguide.net/guides/oceania/australia/new-south-wales/sydney/nightlife
+* https://www.goodfood.com.au/eat-out/cheap-eats/sydneys-top-50-cheap-eats-20160608-gpek0o
+
+
 ## License
 Copyright (C) 2017 Pack Heng
 
