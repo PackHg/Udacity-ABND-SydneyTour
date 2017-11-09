@@ -28,6 +28,7 @@
             android:id="@+id/location_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_half"
             tools:text="@string/c00_circular_quay_description" />
 
         <TextView
