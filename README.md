@@ -15,9 +15,9 @@ This app contains four lists: places to visit, picnic spots, cheap eats and nigh
 
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/screenshots/screen01.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/screenshots/screen02.png" width="300">
-<img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/screenshots/screen03.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/screenshots/screen04.png" width="300">
-<img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/screenshots/screen05.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/screenshots/screen06.png" width="300">
+<img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen01.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen02.png" width="300">
+<img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen03.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen04.png" width="300">
+<img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen05.png" width="300"> <img src="https://raw.githubusercontent.com/PackHg/Udacity-ABND-SydneyTour/master/screenshots/screen06.png" width="300">
 
 
 ## License
