@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sydney Guide</string>
+    <string name="app_name">Sydney Tour Guide</string>
 
     <string name="places_to_visit">Places to Visit</string>
     <string name="picnic_spots">Picnic Spots</string>
@@ -12,13 +12,6 @@
     <string name="confirm_exit">Do you to exit?</string>
     <string name="stay">Stay</string>
     <string name="leave">Leave</string>
-
-    <string-array name="categories_array">
-        <item>@string/places_to_visit</item>
-        <item>@string/picnic_spots</item>
-        <item>@string/restaurants</item>
-        <item>@string/what</item>
-    </string-array>
 
     <!-- Navigation Drawer-->
     <string name="navigation_drawer_open">Open navigation drawer</string>

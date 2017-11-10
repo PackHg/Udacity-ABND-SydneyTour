@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>@string/places_to_visit</item>
+        <item>@string/picnic_spots</item>
+        <item>@string/restaurants</item>
+        <item>@string/what</item>
+    </string-array>
+</resources>

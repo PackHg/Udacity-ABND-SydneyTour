@@ -1,4 +1,4 @@
-# Sydney Tour
+# Sydney Tour Guide
 This is my **Tour Guide (v1) App** of [Android Basics Nanodegree](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803).
 
 ## What is it about?
